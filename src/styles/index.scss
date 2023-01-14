@@ -1,0 +1,24 @@
+@import "./grid.scss";
+@import "aos/dist/aos.css";
+
+body {
+  margin: 0;
+  font-family: DM Sans, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: black;
+}
+
+main {
+  background: black;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

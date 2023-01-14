@@ -1,0 +1,52 @@
+.site-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.site-col-1 {
+  grid-column: span 1;
+}
+
+.site-col-2 {
+  grid-column: span 2;
+}
+
+.site-col-3 {
+  grid-column: span 3;
+}
+
+.site-col-4 {
+  grid-column: span 4;
+}
+
+.site-col-5 {
+  grid-column: span 5;
+}
+
+.site-col-6 {
+  grid-column: span 6;
+}
+
+.site-col-7 {
+  grid-column: span 7;
+}
+
+.site-col-8 {
+  grid-column: span 8;
+}
+
+.site-col-9 {
+  grid-column: span 9;
+}
+
+.site-col-10 {
+  grid-column: span 10;
+}
+
+.site-col-11 {
+  grid-column: span 11;
+}
+
+.site-col-12 {
+  grid-column: span 12;
+}
