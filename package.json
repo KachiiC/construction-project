@@ -2,7 +2,7 @@
   "name": "ben-jimmy-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://kachiic.github.io/ben-jimmy-site",
+  "homepage": "http://kachiic.github.io/construction-project/",
   "dependencies": {
     "@ant-design/icons": "^5.0.0",
     "@types/node": "^16.18.11",
