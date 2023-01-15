@@ -40,22 +40,8 @@ export const FooterIcons: FC = () => {
 export const FooterButtons: FC = () => (
   <div className="footer-contact-container site-col-4">
     <h3>Contact Us</h3>
-    <div className="footer-contact-frame">
-      <a href="mailto:kach93@gmail.com">
-        <button className="custom-btn btn-12">
-          <span>Business@gmail.com</span>
-          <span>Email US</span>
-        </button>
-      </a>
-    </div>
-    <div className="footer-contact-frame">
-      <a href="tel:+447519547007">
-        <button className="custom-btn btn-12">
-          <span>+44123456789</span>
-          <span>Read More</span>
-        </button>
-      </a>
-    </div>
+    <h4>Email Us</h4>
+    <h4>Phone Us</h4>
     <FooterIcons />
   </div>
 );

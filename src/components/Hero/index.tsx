@@ -1,6 +1,13 @@
 import "./Hero.scss";
 
-import { IHero } from "./Hero.styles";
+import {
+  HeroMainImageDiv,
+  SmallImageOneDiv,
+  SmallImageThreeDiv,
+  SmallImageTwoDiv
+} from "./Hero.styles";
+
+import { IHero } from "./Hero.types";
 
 export const Hero = ({
   title,
@@ -9,9 +16,17 @@ export const Hero = ({
   images,
   icons
 }: IHero) => {
+  const iconList = icons?.map(({ link, icon }) => (
+    <a href={link} target="_blank" rel="noreferrer">
+      {icon}
+    </a>
+  ));
+
+  const { main, smallImageOne, smallImageTwo, smallImageThree } = images;
+
   return (
-    <div className="home-hero">
-      <div className="hero"></div>
+    <div className="hero-container">
+      <HeroMainImageDiv image={main} />
       <div className="header">{title}</div>
       <div className="content">
         <div className="heading">
@@ -19,21 +34,10 @@ export const Hero = ({
           <p>{description}</p>
         </div>
       </div>
-      <div className="small-img small1"></div>
-      <div className="small-img small2"></div>
-      <div className="small-img small3"></div>
-      <div className="readmore">
-        <img src={images.main} alt="" />
-      </div>
-      <div className="social">
-        {icons?.map(({ link, icon }) => {
-          return (
-            <a href={link} target="_blank" rel="noreferrer">
-              {icon}
-            </a>
-          );
-        })}
-      </div>
+      <SmallImageOneDiv image={smallImageOne} />
+      <SmallImageTwoDiv image={smallImageTwo} />
+      <SmallImageThreeDiv image={smallImageThree} />
+      <div className="social">{iconList}</div>
     </div>
   );
 };
