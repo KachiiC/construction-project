@@ -1,7 +1,6 @@
 import "./Home.scss";
 
 import { FC } from "react";
-import Footer from "components/Footer";
 import { HomeAbout } from "./partials/HomeAbout";
 import { HomeCards } from "./partials/HomeCards";
 import { HomeHero } from "./partials/HomeHero";
@@ -14,7 +13,6 @@ const Home: FC = () => {
       <HomeAbout />
       <HomeCards />
       <HomeTestimony />
-      <Footer />
     </>
   );
 };

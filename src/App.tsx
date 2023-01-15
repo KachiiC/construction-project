@@ -1,6 +1,6 @@
 import AOS from "aos";
 import { RouterProvider } from "react-router-dom";
-import { pagesRouter } from "./pages/routes";
+import { pagesRouter } from "./pages/Router";
 import { useEffect } from "react";
 
 const App = () => {
@@ -8,11 +8,7 @@ const App = () => {
     AOS.init();
   }, []);
 
-  return (
-    <main>
-      <RouterProvider router={pagesRouter} />
-    </main>
-  );
+  return <RouterProvider router={pagesRouter} />;
 };
 
 export default App;

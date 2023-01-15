@@ -1,25 +1,14 @@
-import { FooterIconsList, legalLinks, servicesLink } from "./FooterLinks";
+import { FooterIconsList, displayedLinks } from "./FooterLinks";
 
 import { FC } from "react";
-
-const displayedLinks = [
-  {
-    section: "Our Services",
-    links: servicesLink
-  },
-  {
-    section: "Legal & More",
-    links: legalLinks
-  }
-];
+import { Link } from "react-router-dom";
+import { lowerCaseDash } from "utils/routeHelper";
 
 export const FooterLinks: FC = () => {
   const linksList = displayedLinks.map(({ section, links }) => {
-    const sectionLinks = links.map(({ title, link }) => (
-      <div className="service-links-handle" key={title}>
-        <a href={link} target="_blank" rel="noreferrer">
-          {title}
-        </a>
+    const sectionLinks = links.map((link) => (
+      <div className="service-links-handle" key={link}>
+        <Link to={`/${lowerCaseDash(link)}`}>{link}</Link>
       </div>
     ));
 
