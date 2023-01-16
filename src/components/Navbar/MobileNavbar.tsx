@@ -16,7 +16,7 @@ export const MobileNavbar = ({
           <Menu
             theme="dark"
             onClick={onClick}
-            style={{ width: "100vw" }}
+            style={{ width: "100vw", background: "#1b1b1b" }}
             mode="inline"
             items={data}
           />

@@ -85,8 +85,7 @@
     h1 {
       color: black;
       grid-area: title;
-      padding-top: var(--box-y-padding);
-      padding-left: var(--box-x-padding);
+      padding: 30px;
       &::after {
         left: var(--box-x-padding);
         top: var(--box-y-padding);
