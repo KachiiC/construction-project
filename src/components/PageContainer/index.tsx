@@ -1,3 +1,5 @@
+import './PageContainer.scss'
+
 import Aos from "aos";
 import Footer from "components/Footer";
 import { Navbar } from "components/Navbar";
@@ -17,7 +19,7 @@ export const PageContainer = ({ children }: { children: JSX.Element }) => {
   return (
     <main>
       <Navbar data={navbarItems} />
-      {children}
+      <div className="page-container">{children}</div>
       <Footer />
     </main>
   );
