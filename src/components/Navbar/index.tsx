@@ -35,13 +35,23 @@ export const Navbar = ({ data }: INavbar) => {
           />
         </div>
         <div className="mobile-menu">
-          <div className="mobile-menu-btn" onClick={() => setShowSmallMenu(!showSmallMenu)}>
+          <div
+            className="mobile-menu-btn"
+            onClick={() => setShowSmallMenu(!showSmallMenu)}
+          >
             <div className="mobile-menu-text">Menu</div>{" "}
             {showSmallMenu ? <MenuFoldOutlined /> : <MenuUnfoldOutlined />}
           </div>
         </div>
       </header>
-      <MobileNavbar data={data} showMenu={showSmallMenu} onClick={() => setShowSmallMenu(!showSmallMenu)}/>
+      <MobileNavbar
+        data={data}
+        showMenu={showSmallMenu}
+        onClick={(e: any) => {
+          setShowSmallMenu(!showSmallMenu);
+          onClick(e);
+        }}
+      />
     </>
   );
 };

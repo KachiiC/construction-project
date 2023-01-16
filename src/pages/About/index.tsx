@@ -1,6 +1,7 @@
 import "./About.scss";
 
 import { FC } from "react";
+import { HomeCards } from "pages/Home/partials/HomeCards";
 
 const About: FC = () => {
   return (
@@ -79,6 +80,7 @@ const About: FC = () => {
           </div>
         </div>
       </div>
+      <HomeCards />
     </div>
   );
 };
