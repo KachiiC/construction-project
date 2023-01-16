@@ -1,7 +1,10 @@
 import "./Navbar.scss";
 
+import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
+
 import { Menu } from "antd";
 import type { MenuProps } from "antd";
+import { MobileNavbar } from "./MobileNavbar";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
@@ -11,6 +14,7 @@ interface INavbar {
 
 export const Navbar = ({ data }: INavbar) => {
   const [current, setCurrent] = useState("");
+  const [showSmallMenu, setShowSmallMenu] = useState(false);
 
   const navigate = useNavigate();
   const onClick: MenuProps["onClick"] = ({ key }) => {
@@ -19,14 +23,25 @@ export const Navbar = ({ data }: INavbar) => {
   };
 
   return (
-    <header>
-      <Menu
-        onClick={onClick}
-        selectedKeys={[current]}
-        mode="horizontal"
-        items={data}
-        theme="dark"
-      />
-    </header>
+    <>
+      <header>
+        <div className="desktop-menu">
+          <Menu
+            onClick={onClick}
+            selectedKeys={[current]}
+            mode="horizontal"
+            items={data}
+            theme="dark"
+          />
+        </div>
+        <div className="mobile-menu">
+          <div className="mobile-menu-btn" onClick={() => setShowSmallMenu(!showSmallMenu)}>
+            <div className="mobile-menu-text">Menu</div>{" "}
+            {showSmallMenu ? <MenuFoldOutlined /> : <MenuUnfoldOutlined />}
+          </div>
+        </div>
+      </header>
+      <MobileNavbar data={data} showMenu={showSmallMenu} onClick={() => setShowSmallMenu(!showSmallMenu)}/>
+    </>
   );
 };

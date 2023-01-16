@@ -10,5 +10,44 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 10;
+  .desktop-menu {
+    @media screen and (max-width: 835px) {
+      display: none;
+    }
+  }
+
+  .mobile-menu {
+    display: none;
+    background: black;
+    height: 46px;
+
+    @media screen and (max-width: 835px) {
+      display: flex;
+      justify-content: flex-end;
+
+      &-btn {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      span {
+        text-align: center;
+        font-size: 30px;
+        align-self: center;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.small-menu {
+  border-top: 1px solid #808080;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 1;
+  top: 46px;
+  z-index: 10;
 }
