@@ -39,9 +39,14 @@ export const FooterIcons: FC = () => {
 
 export const FooterButtons: FC = () => (
   <div className="footer-contact-container site-col-4">
-    <h3>Contact Us</h3>
-    <h4>Email Us</h4>
-    <h4>Phone Us</h4>
+    <h3>
+      <Link to="/contact">Contact Us</Link>
+    </h3>
+    <div className="footer-contact-btn">
+      <span>
+        <a href="mailto: abc@example.com">Email</a>
+      </span>
+    </div>
     <FooterIcons />
   </div>
 );

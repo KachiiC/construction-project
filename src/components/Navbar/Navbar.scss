@@ -9,8 +9,8 @@
   background: white;
 }
 
-.ant-menu-item-selected {
-  color: white;
+.ant-menu-item-selected,
+.ant-menu-submenu-selected {
   background: #1b1b1b !important;
 }
 

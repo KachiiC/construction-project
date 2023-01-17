@@ -44,12 +44,73 @@
       }
 
       h3 {
-        margin: 0px;
+        margin: 0px 0px 20px;
         text-align: center;
+        a {
+          color: #ffffff;
+        }
       }
 
       a {
         text-decoration: none;
+      }
+
+      .footer-contact-btn {
+        span {
+          position: relative;
+          display: inline-flex;
+          width: 180px;
+          height: 55px;
+          margin: 0 15px;
+          perspective: 1000px;
+
+          a {
+            font-size: 19px;
+            letter-spacing: 1px;
+            transform-style: preserve-3d;
+            transform: translateZ(-25px);
+            transition: transform 0.25s;
+            font-family: "Montserrat", sans-serif;
+
+            &:before,
+            &:after {
+              position: absolute;
+              height: 55px;
+              width: 180px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 5px solid black;
+              box-sizing: border-box;
+              border-radius: 5px;
+            }
+
+            &:before {
+              color: black;
+              background: white;
+              transform: rotateY(0deg) translateZ(25px);
+
+            }
+            
+            &:after {
+              color: white;
+              background: rgb(73, 73, 73);
+              transform: rotateX(90deg) translateZ(25px);
+            }
+            
+            &:hover {
+              transform: translateZ(-30px) rotateX(-90deg);
+            }
+
+            &:nth-child(1) {
+              &:before,
+              &:after {
+                content: "EMAIL US"
+              }
+            }
+
+          }
+        }
       }
 
       .footer-icons {
