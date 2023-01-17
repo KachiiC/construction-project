@@ -1,15 +1,25 @@
+import BathroomsImg from "../pages/Home/data/images/bathrooms.jpg";
+import BuildingImg from "../pages/Home/data/images/building.jpg";
+import CarpentryImg from "../pages/Home/data/images/carpentry.jpg";
+import ElectricsImg from "../pages/Home/data/images/electrics.jpg";
+import KitchensImg from "../pages/Home/data/images/kitchen.jpg";
+import MechanicalImg from "../pages/Home/data/images/mechanical.jpg";
+import PaintingImg from "../pages/Home/data/images/painting.jpg";
+import PlumbingImg from "../pages/Home/data/images/plumbing.jpg";
+import RoofingImg from "../pages/Home/data/images/roofing.jpg";
+import { ServicePage } from "components/ServicePage";
 import { lowerCaseDash } from "utils/routeHelper";
 
 export const serviceList = {
-  Building: <h1>Building</h1>,
-  Kitchens: <h1>Kitchens</h1>,
-  Bathrooms: <h1>Bathrooms</h1>,
-  Plumbing: <h1>Plumbing</h1>,
-  Electrics: <h1>Electrics</h1>,
-  Mechanical: <h1>Mechanical</h1>,
-  Carpentry: <h1>Carpentry</h1>,
-  Roofing: <h1>Roofing</h1>,
-  "Painting and decorating": <h1>Painting and decorating</h1>
+  Building: <ServicePage heroTitle="Building" heroImage={BuildingImg} />,
+  Kitchens: <ServicePage heroTitle="Kitchens" heroImage={KitchensImg} />,
+  Bathrooms: <ServicePage heroTitle="Bathrooms" heroImage={BathroomsImg} />,
+  Plumbing: <ServicePage heroTitle="Plumbing" heroImage={PlumbingImg} />,
+  Electrics: <ServicePage heroTitle="Electrics" heroImage={ElectricsImg} />,
+  Mechanical: <ServicePage heroTitle="Mechanical" heroImage={MechanicalImg} />,
+  Carpentry: <ServicePage heroTitle="Carpentry" heroImage={CarpentryImg} />,
+  Roofing: <ServicePage heroTitle="Roofing" heroImage={RoofingImg} />,
+  "Painting and decorating": <ServicePage heroTitle="Painting" heroImage={PaintingImg} />
 };
 
 export const servicesData = Object.entries(serviceList).map((data) => {

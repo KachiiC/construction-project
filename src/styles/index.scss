@@ -1,5 +1,7 @@
 @import "./grid.scss";
 @import "aos/dist/aos.css";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 body {
   margin: 0;
@@ -23,4 +25,9 @@ main {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
 }

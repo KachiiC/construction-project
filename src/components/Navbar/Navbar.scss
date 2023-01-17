@@ -1,17 +1,26 @@
 .ant-menu,
-.ant-menu-item {
+.ant-menu-active-item:hover {
   background: #1b1b1b;
   color: white;
 }
 
+.ant-menu-item:hover {
+  color: #1b1b1b;
+  background: white;
+}
+
+.ant-menu-item-selected {
+  color: white;
+  background: #1b1b1b !important;
+}
+
+.ant-menu-item-active {
+  color: #1b1b1b !important;
+  background: white !important;
+}
+
 .ant-menu-item {
   cursor: pointer;
-  &-selected,
-  &-selected:hover,
-  &-active:hover {
-    background: white !important;
-    color: #1b1b1b !important;
-  }
 }
 
 header {
