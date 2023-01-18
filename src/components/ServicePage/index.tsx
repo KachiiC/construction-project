@@ -3,6 +3,7 @@ import "./ServicePage.scss";
 import { ServicePageAbout } from "./partials/ServicePageAbout";
 import { ServicePageGallery } from "./partials/ServicePageGallery";
 import { ServicePageHero } from "./partials/ServicePageHero";
+import { ServicePageList } from "./partials/ServicePageList";
 import { ServicePageQuestions } from "./partials/ServicePageQuestions";
 
 interface IServicePage {
@@ -16,8 +17,9 @@ export const ServicePage = ({ data, heroTitle, heroImage }: IServicePage) => {
     <>
       <ServicePageHero image={heroImage || ""} title={heroTitle || ""} />
       <ServicePageAbout />
-      <ServicePageGallery />
+      <ServicePageList />
       <ServicePageQuestions />
+      <ServicePageGallery />
     </>
   );
 };

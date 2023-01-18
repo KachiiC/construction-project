@@ -6,7 +6,7 @@ import { lowerCaseDash } from "utils/routeHelper";
 export const HomeCards: FC = () => {
   const displayedHomeCards = HomeServicesData.map(({ title, image }) => (
     <Link
-      to={lowerCaseDash(title)}
+      to={`/${lowerCaseDash(title)}`}
       key={title}
       className="home-cards-link-container"
     >

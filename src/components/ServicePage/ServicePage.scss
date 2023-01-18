@@ -74,3 +74,27 @@ article {
     margin-bottom: 40px;
   }
 }
+
+.service-page-list {
+  width: 80vw;
+  margin: auto;
+
+  .service-page-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  @media screen and (max-width: 1080px) {
+    .service-page-tags-container {
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    width: 90vw;
+    .service-page-tags-container {
+      justify-content: flex-start;
+    }
+  }
+}
