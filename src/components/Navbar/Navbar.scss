@@ -43,7 +43,16 @@ header {
 
     @media screen and (max-width: 835px) {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
+
+      .small-menu-logo {
+        align-self: center;
+        padding: 0px 15px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
 
       &-btn {
         display: flex;

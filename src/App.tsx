@@ -1,9 +1,10 @@
+import { FC, useEffect } from "react";
+
 import AOS from "aos";
 import { RouterProvider } from "react-router-dom";
 import { pagesRouter } from "./pages/Router";
-import { useEffect } from "react";
 
-const App = () => {
+const App: FC = () => {
   useEffect(() => {
     AOS.init();
   }, []);

@@ -1,11 +1,11 @@
 import "./Navbar.scss";
 
+import { Link, useNavigate } from "react-router-dom";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 
 import { Menu } from "antd";
 import type { MenuProps } from "antd";
 import { MobileNavbar } from "./MobileNavbar";
-import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 interface INavbar {
@@ -35,6 +35,9 @@ export const Navbar = ({ data }: INavbar) => {
           />
         </div>
         <div className="mobile-menu">
+          <div className="small-menu-logo">
+            <Link to="/">Logo Placeholder</Link>
+          </div>
           <div
             className="mobile-menu-btn"
             onClick={() => setShowSmallMenu(!showSmallMenu)}

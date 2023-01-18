@@ -1,4 +1,4 @@
-import './PageContainer.scss'
+import "./PageContainer.scss";
 
 import Aos from "aos";
 import Footer from "components/Footer";

@@ -9,7 +9,7 @@ const Contact = () => {
       <h1>&bull; Contact US &bull;</h1>
       <div className="underline"></div>
       <div className="icon_wrapper">
-        <ToolFilled style={{fontSize: "40px"}} />
+        <ToolFilled style={{ fontSize: "40px" }} />
       </div>
       <form action="#" method="post" id="contact_form">
         <div className="name">

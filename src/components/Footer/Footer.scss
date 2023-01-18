@@ -89,15 +89,14 @@
               color: black;
               background: white;
               transform: rotateY(0deg) translateZ(25px);
-
             }
-            
+
             &:after {
               color: white;
               background: rgb(73, 73, 73);
               transform: rotateX(90deg) translateZ(25px);
             }
-            
+
             &:hover {
               transform: translateZ(-30px) rotateX(-90deg);
             }
@@ -105,10 +104,9 @@
             &:nth-child(1) {
               &:before,
               &:after {
-                content: "EMAIL US"
+                content: "EMAIL US";
               }
             }
-
           }
         }
       }

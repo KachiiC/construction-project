@@ -19,7 +19,9 @@ export const serviceList = {
   Mechanical: <ServicePage heroTitle="Mechanical" heroImage={MechanicalImg} />,
   Carpentry: <ServicePage heroTitle="Carpentry" heroImage={CarpentryImg} />,
   Roofing: <ServicePage heroTitle="Roofing" heroImage={RoofingImg} />,
-  "Painting and decorating": <ServicePage heroTitle="Painting" heroImage={PaintingImg} />
+  "Painting and decorating": (
+    <ServicePage heroTitle="Painting" heroImage={PaintingImg} />
+  )
 };
 
 export const servicesData = Object.entries(serviceList).map((data) => {

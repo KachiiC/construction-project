@@ -10,5 +10,5 @@ export const StyledServicePageHero = styled.div<any>`
   color: black;
   background: url(${({ image }) => image}) center center no-repeat;
   background-size: cover;
-  opacity: 0.9
+  opacity: 0.9;
 `;

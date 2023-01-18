@@ -38,6 +38,7 @@ export const ServicePageList = () => {
       </Tag>
     );
   });
+
   return (
     <div className="service-page-list">
       <h3>What we provide</h3>
