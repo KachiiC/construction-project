@@ -1,5 +1,7 @@
+@import "styles/global.scss";
+
 .ant-collapse {
-  background: #1f1f1f;
+  background: $global-color;
   color: white;
   width: 90%;
   margin: auto;

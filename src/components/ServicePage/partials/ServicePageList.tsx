@@ -32,7 +32,7 @@ export const ServicePageList = () => {
       margin: 5
     };
     return (
-      <Tag color="#929292" key={index} style={tagStyle}>
+      <Tag color="#003366" key={index} style={tagStyle}>
         {point}
       </Tag>
     );

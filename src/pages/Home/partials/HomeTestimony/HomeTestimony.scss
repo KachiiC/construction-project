@@ -18,13 +18,13 @@
 
     h1 {
       font-family: $global-font;
-      position: relative; /* for pseudos */
-      color: black;
+      position: relative;
+      color: $global-color;
       font-size: 2.8rem;
       font-weight: normal;
       line-height: 1;
       margin: 0;
-      border: 2px solid gray;
+      border: 2px solid $global-color;
       border: solid 2px;
       border-radius: 20px;
       padding: 25px;
@@ -32,7 +32,7 @@
       &:after {
         content: "";
         position: absolute;
-        border: 2px solid gray;
+        border: 2px solid $global-color;
         border-radius: 0 50px 0 0;
         width: 60px;
         height: 60px;
@@ -46,7 +46,7 @@
       &:before {
         content: "";
         position: absolute;
-        border: 3px solid white;
+        border: 2px solid white;
         width: 80px;
         bottom: -3px;
         left: 50px;
@@ -61,7 +61,7 @@
 
     h4 {
       position: relative;
-      color: black;
+      color: $global-color;
       font-size: 1.3rem;
       font-weight: 400;
       line-height: 1.2;

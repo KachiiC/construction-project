@@ -95,7 +95,7 @@
 
             &:after {
               color: white;
-              background: rgb(73, 73, 73);
+              background: $global-color(73, 73, 73);
               transform: rotateX(90deg) translateZ(25px);
             }
 

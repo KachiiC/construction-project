@@ -20,9 +20,15 @@
 }
 
 .ant-menu-item-active,
-.ant-menu-submenu-selected {
+.ant-menu-submenu-selected,
+.ant-menu-submenu-open,
+.ant-menu-submenu-active {
   color: $global-color !important;
   background: white !important;
+}
+
+.ant-menu-submenu-title:hover {
+  color: $global-color !important;
 }
 
 .ant-menu-item {
@@ -36,7 +42,7 @@ header {
   width: 100vw;
   z-index: 10;
   display: flex;
-  border-bottom: #dcdcdc;
+  border-bottom: 1px solid #857b7b;
 
   .desktop-menu {
     width: 85vw;

@@ -33,9 +33,13 @@
 
     .case-study-caption {
       padding: 10px;
-
+      
       h3 {
         font-size: 20px;
+      }
+      
+      p {
+        text-align: left;
       }
 
       @media screen and (max-width: 835px) {
