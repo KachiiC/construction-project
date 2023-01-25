@@ -1,6 +1,5 @@
 import "./PageContainer.scss";
 
-import Aos from "aos";
 import Footer from "components/Footer";
 import { Navbar } from "components/Navbar";
 import { navbarItems } from "data/NavbarData";
@@ -11,15 +10,13 @@ export const PageContainer = ({ children }: { children: JSX.Element }) => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-
-    Aos.init();
+    document.getElementById("page-container")?.scroll(0, 0);
   }, [pathname]);
 
   return (
     <main>
       <Navbar data={navbarItems} />
-      <div className="page-container">{children}</div>
+      <div className="page-container" id="page-container">{children}</div>
       <Footer />
     </main>
   );
