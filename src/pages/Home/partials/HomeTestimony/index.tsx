@@ -7,8 +7,8 @@ export const HomeTestimony: FC = () => (
     <div className="about-quote-container">
       <h1>
         Intuitive design happens when{" "}
-        <span style={{ color: "#ffffff" }}>current knowledge</span> is the same
-        as the <span style={{ color: "#ffffff" }}>target knowledge.</span>
+        <span style={{ fontWeight: 900 }}>current knowledge</span> is the same
+        as the <span style={{ fontWeight: 900 }}>target knowledge.</span>
       </h1>
       <h4>
         Quoter

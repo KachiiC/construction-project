@@ -1,9 +1,11 @@
+@import "styles/global.scss";
+
 /* center the blockquote in the page */
 .about-quote {
   &-wrapper {
-    background: black;
+    background: white;
     display: flex;
-    height: 75vh;
+    height: 100%;
     padding: 0 20px;
   }
 
@@ -15,14 +17,14 @@
     align-self: center;
 
     h1 {
-      font-family: DM Sans, sans-serif;
+      font-family: $global-font;
       position: relative; /* for pseudos */
-      color: white;
+      color: black;
       font-size: 2.8rem;
       font-weight: normal;
       line-height: 1;
       margin: 0;
-      border: 2px solid #fff;
+      border: 2px solid gray;
       border: solid 2px;
       border-radius: 20px;
       padding: 25px;
@@ -30,7 +32,7 @@
       &:after {
         content: "";
         position: absolute;
-        border: 2px solid white;
+        border: 2px solid gray;
         border-radius: 0 50px 0 0;
         width: 60px;
         height: 60px;
@@ -44,7 +46,7 @@
       &:before {
         content: "";
         position: absolute;
-        border: 3px solid black;
+        border: 3px solid white;
         width: 80px;
         bottom: -3px;
         left: 50px;
@@ -59,7 +61,7 @@
 
     h4 {
       position: relative;
-      color: #ffffff;
+      color: black;
       font-size: 1.3rem;
       font-weight: 400;
       line-height: 1.2;

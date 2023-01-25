@@ -12,11 +12,11 @@ export const MobileNavbar = ({
   return (
     <>
       {showMenu && (
-        <div className="small-menu">
+        <div className="small-menu-container">
           <Menu
             theme="dark"
             onClick={onClick}
-            style={{ width: "100vw", background: "#1b1b1b" }}
+            className="small-menu"
             mode="inline"
             items={data}
           />

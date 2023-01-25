@@ -1,21 +1,27 @@
-.ant-menu,
-.ant-menu-active-item:hover {
-  background: #1b1b1b;
+@import "styles/global.scss";
+
+.ant-menu {
+  background: $global-color;
   color: white;
+  font-weight: 600;
+  font-family: $global-font;
 }
 
 .ant-menu-item:hover {
-  color: #1b1b1b;
+  color: $global-color;
   background: white;
 }
 
 .ant-menu-item-selected,
-.ant-menu-submenu-selected {
-  background: #1b1b1b !important;
+.ant-menu-submenu-selected,
+.ant-menu-submenu-selected > .ant-menu-submenu-title {
+  background: white !important;
+  color: $global-color !important;
 }
 
-.ant-menu-item-active {
-  color: #1b1b1b !important;
+.ant-menu-item-active,
+.ant-menu-submenu-selected {
+  color: $global-color !important;
   background: white !important;
 }
 
@@ -25,25 +31,30 @@
 
 header {
   overflow: hidden;
-  background-color: #333;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
+  display: flex;
+  border-bottom: #dcdcdc;
+
   .desktop-menu {
-    @media screen and (max-width: 835px) {
+    width: 85vw;
+    @media screen and (max-width: 1000px) {
       display: none;
     }
   }
 
   .mobile-menu {
     display: none;
-    background: #1b1b1b;
+    background: $global-color;
+    color: white;
     height: 46px;
 
-    @media screen and (max-width: 835px) {
+    @media screen and (max-width: 1000px) {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
+      width: 100%;
 
       .small-menu-logo {
         align-self: center;
@@ -70,14 +81,37 @@ header {
   }
 }
 
-.small-menu {
-  border-top: 1px solid #808080;
-  position: fixed;
-  top: 0;
-  background: #1b1b1b;
-  color: white;
-  width: 100%;
-  z-index: 1;
-  top: 46px;
-  z-index: 10;
+.small-menu-container {
+  .small-menu {
+    border-top: 1px solid #808080;
+    position: fixed;
+    top: 0;
+    background: $global-color;
+    color: white;
+    width: 100%;
+    z-index: 1;
+    top: 46px;
+    z-index: 10;
+    width: "100vw";
+    background: $global-color;
+  }
+}
+
+.menu-logo {
+  width: 15vw;
+  background: $global-color;
+  text-align: center;
+  .menu-logo-image {
+    padding: 4px 0px;
+    max-width: 79px;
+    background: $global-color !important;
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 85vw;
+    padding: 0px 10px;
+    text-align: left;
+  }
 }

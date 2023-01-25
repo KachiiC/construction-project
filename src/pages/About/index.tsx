@@ -37,10 +37,8 @@ const About: FC = () => {
               <h2 className="boxed-headline">Our services</h2>
               <div className="line line--horizontal line--right"></div>
             </div>
-
             <div className="line line--vertical line--top"></div>
             <div className="line line--vertical line--bottom"></div>
-
             <div className="spacer"></div>
             <div className="content-preview content-preview--left content-preview--top">
               <h3 className="content-preview__title">What</h3>
@@ -50,7 +48,6 @@ const About: FC = () => {
                 corrupti quaerat.
               </p>
             </div>
-
             <div className="content-preview  content-preview--right content-preview--top">
               <h3 className="content-preview__title">Who</h3>
               <p className="content-preview__excerpt">
@@ -60,7 +57,6 @@ const About: FC = () => {
             </div>
             <div className="spacer"></div>
             <div className="spacer"></div>
-
             <div className="content-preview content-preview--left content-preview--bottom">
               <h3 className="content-preview__title">When</h3>
               <p className="content-preview__excerpt">
@@ -68,7 +64,6 @@ const About: FC = () => {
                 laborum eos quaerat nostrum deleniti laboriosam debitis.
               </p>
             </div>
-
             <div className="content-preview content-preview--right content-preview--bottom">
               <h3 className="content-preview__title">Our Values</h3>
               <p className="content-preview__excerpt">

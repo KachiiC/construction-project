@@ -25,7 +25,6 @@ const testServiceListData = [
 
 export const ServicePageList = () => {
   const displayedList = testServiceListData.map((point, index) => {
-    const colorScheme = index % 2 === 0 ? "#929292" : "#424242";
     const tagStyle = {
       border: "1px solid white",
       fontSize: "18px",
@@ -33,7 +32,7 @@ export const ServicePageList = () => {
       margin: 5
     };
     return (
-      <Tag color={colorScheme} key={index} style={tagStyle}>
+      <Tag color="#929292" key={index} style={tagStyle}>
         {point}
       </Tag>
     );

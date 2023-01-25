@@ -1,11 +1,12 @@
 import "./Navbar.scss";
 
-import { Link, useNavigate } from "react-router-dom";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 
 import { Menu } from "antd";
 import type { MenuProps } from "antd";
 import { MobileNavbar } from "./MobileNavbar";
+import SvgLogo from "assets/images/vvs-logo.png";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 interface INavbar {
@@ -25,6 +26,9 @@ export const Navbar = ({ data }: INavbar) => {
   return (
     <>
       <header>
+        <div className="menu-logo">
+            <img src={SvgLogo} alt="" className="menu-logo-image" />
+        </div>
         <div className="desktop-menu">
           <Menu
             onClick={onClick}
@@ -35,9 +39,6 @@ export const Navbar = ({ data }: INavbar) => {
           />
         </div>
         <div className="mobile-menu">
-          <div className="small-menu-logo">
-            <Link to="/">Logo Placeholder</Link>
-          </div>
           <div
             className="mobile-menu-btn"
             onClick={() => setShowSmallMenu(!showSmallMenu)}

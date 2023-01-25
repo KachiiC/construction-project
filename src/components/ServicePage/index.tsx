@@ -1,8 +1,8 @@
 import "./ServicePage.scss";
 
+import { Hero } from "components/Hero";
 import { ServicePageAbout } from "./partials/ServicePageAbout";
 import { ServicePageGallery } from "./partials/ServicePageGallery";
-import { ServicePageHero } from "./partials/ServicePageHero";
 import { ServicePageList } from "./partials/ServicePageList";
 import { ServicePageQuestions } from "./partials/ServicePageQuestions";
 
@@ -15,7 +15,7 @@ interface IServicePage {
 export const ServicePage = ({ data, heroTitle, heroImage }: IServicePage) => {
   return (
     <>
-      <ServicePageHero image={heroImage || ""} title={heroTitle || ""} />
+      <Hero title={heroTitle} image={heroImage || ''}/>
       <ServicePageAbout />
       <ServicePageList />
       <ServicePageQuestions />

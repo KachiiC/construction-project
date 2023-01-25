@@ -1,5 +1,7 @@
+@import 'styles/global.scss';
+
 .site-footer {
-  background: #000000;
+  background: #003366;
   color: #ffffff;
   padding: 30px;
 
@@ -70,7 +72,7 @@
             transform-style: preserve-3d;
             transform: translateZ(-25px);
             transition: transform 0.25s;
-            font-family: "Montserrat", sans-serif;
+            font-family: $global-font;
 
             &:before,
             &:after {

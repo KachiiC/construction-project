@@ -11,9 +11,7 @@ export interface IHeroIcons {
 }
 
 export interface IHero {
-  title: string;
-  subTitle: string;
-  description: string;
-  images: IHeroImages;
-  icons?: IHeroIcons[];
+  image: string;
+  icon?: string;
+  title?: string;
 }

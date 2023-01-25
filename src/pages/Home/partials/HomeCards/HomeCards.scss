@@ -1,4 +1,5 @@
 @import "styles/mixin.scss";
+@import "styles/global.scss";
 
 .home-cards-link {
   padding: 20px;
@@ -12,7 +13,7 @@
     text-align: center;
     margin: 10px;
     color: white;
-    font-family: DM Sans, sans-serif;
+    font-family: $global-font;
   }
 
   img {
@@ -35,11 +36,11 @@
       text-align: center;
       justify-content: center;
       align-items: center;
-      @include magic-border(3px, white, 0.15s, 0);
+      @include magic-border(3px, $global-color, 0.15s, 0);
 
       &:hover {
         h3 {
-          color: yellow;
+          color: $global-color;
         }
       }
 

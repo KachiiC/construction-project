@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
-@import "../../styles//mixin.scss";
+@import "../../styles/mixin.scss";
+@import "../../styles/global.scss";
 
 .card-text-section {
   --box-x-padding: 2rem;
@@ -11,7 +12,7 @@
     color: white;
     font-size: 30px;
     margin: 0 0 1rem;
-    font-family: DM Sans, sans-serif;
+    font-family: $global-font;
     position: relative;
   }
 
