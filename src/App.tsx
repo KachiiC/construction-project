@@ -1,6 +1,4 @@
-import { FC, useEffect } from "react";
-
-import AOS from "aos";
+import { FC } from "react";
 import { RouterProvider } from "react-router-dom";
 import { pagesRouter } from "./pages/Router";
 

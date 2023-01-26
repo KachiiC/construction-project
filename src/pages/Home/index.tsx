@@ -1,8 +1,6 @@
 import "./Home.scss";
 
-import { FC, useEffect } from "react";
-
-import Aos from "aos";
+import { FC } from "react";
 import { HomeAbout } from "./partials/HomeAbout";
 import { HomeCards } from "./partials/HomeCards";
 import { HomeHero } from "./partials/HomeHero";

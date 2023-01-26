@@ -16,7 +16,11 @@ export const HomeCards: FC = () => {
   ));
 
   return (
-    <div className="home-cards-link" data-aos="zoom-in">
+    <div
+      className="home-cards-link"
+      data-aos="zoom-in"
+      data-aos-duration="1500"
+    >
       <h1>Our services</h1>
       <div className="home-cards-link-wrapper">{displayedHomeCards}</div>
     </div>
