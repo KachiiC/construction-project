@@ -2,24 +2,23 @@
 @import "aos/dist/aos.css";
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
-@import 'styles/global.scss';
+@import "styles/global.scss";
 
-
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   font-family: $global-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
-  overflow: hidden;
-  background: white;
+  // overflow: hidden;
+  background: $global-color;
   color: black;
 }
 
 main {
   background: white;
-  height: 100vh;
   overflow: scroll;
 }
 

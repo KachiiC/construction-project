@@ -16,7 +16,7 @@ export const HomeCards: FC = () => {
   ));
 
   return (
-    <div className="home-cards-link">
+    <div className="home-cards-link" data-aos="zoom-in">
       <h1>Our services</h1>
       <div className="home-cards-link-wrapper">{displayedHomeCards}</div>
     </div>

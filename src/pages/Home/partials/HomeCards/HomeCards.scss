@@ -3,6 +3,7 @@
 
 .home-cards-link {
   padding: 20px;
+  margin-top: 80px;
   * {
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@
   h1 {
     text-align: center;
     margin: 10px;
-    color: white;
+    color: $global-color;
     font-family: $global-font;
   }
 

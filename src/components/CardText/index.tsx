@@ -16,18 +16,14 @@ export const CardText = ({
   image
 }: ICardText) => {
   return (
-    <div className="card-text-section">
-      <div className="card-text-container">
-        <h1>{heading}</h1>
-        <div className="card-text-content">
-          <p>{text}</p>
-          <a href={buttonLink} target="_blank" rel="noreferrer">
-            {buttonText}
-          </a>
-        </div>
-        <div className="image-container">
-          <img src={image} alt="" />
-        </div>
+    <div className="home-about-container">
+      <div className="home-about-image">
+        <img src={image} alt="" />
+      </div>
+      <div className="home-about-caption">
+        <h2>{heading}</h2>
+        <p>{text}</p>
+        <button>{buttonText}</button>
       </div>
     </div>
   );

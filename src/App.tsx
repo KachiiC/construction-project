@@ -5,10 +5,6 @@ import { RouterProvider } from "react-router-dom";
 import { pagesRouter } from "./pages/Router";
 
 const App: FC = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return <RouterProvider router={pagesRouter} />;
 };
 
