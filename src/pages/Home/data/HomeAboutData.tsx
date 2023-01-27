@@ -1,5 +1,5 @@
 export const HomeAboutData = {
-  heading: "About Company Name",
+  heading: "VVS Property Group LTD",
   text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum suscipit doloremque, expedita voluptatum maiores corporis modi assumenda esse consectetur error nulla, vero alias.",
   buttonText: "Learn More",
   buttonLink: "https://www.google.com/",

@@ -1,13 +1,10 @@
 import "./HomeTestimony.scss";
 
 import { FC } from "react";
+import { PageSection } from "components/PageComponents/PageSection";
 
 export const HomeTestimony: FC = () => (
-  <div
-    className="about-quote-wrapper"
-    data-aos="zoom-in"
-    data-aos-duration="1500"
-  >
+  <PageSection duration="2500" transition="fade-right">
     <div className="about-quote-container">
       <h1>
         Intuitive design happens when{" "}
@@ -19,5 +16,5 @@ export const HomeTestimony: FC = () => (
         <br />
       </h4>
     </div>
-  </div>
+  </PageSection>
 );

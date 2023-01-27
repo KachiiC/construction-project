@@ -1,10 +1,11 @@
 import { FC } from "react";
-import { HomeServicesData } from "../../data/HomeCardsData";
 import { Link } from "react-router-dom";
+import { PageSection } from "components/PageComponents/PageSection";
+import { ServicesCardsData } from "data/Services/ServiceCardsData";
 import { lowerCaseDash } from "utils/routeHelper";
 
 export const HomeCards: FC = () => {
-  const displayedHomeCards = HomeServicesData.map(({ title, image }) => (
+  const displayedHomeCards = ServicesCardsData.map(({ title, image }) => (
     <Link
       to={`/${lowerCaseDash(title)}`}
       key={title}
@@ -16,13 +17,11 @@ export const HomeCards: FC = () => {
   ));
 
   return (
-    <div
-      className="home-cards-link"
-      data-aos="zoom-in"
-      data-aos-duration="1500"
-    >
-      <h1>Our services</h1>
-      <div className="home-cards-link-wrapper">{displayedHomeCards}</div>
-    </div>
+    <PageSection duration="2500" transition="fade-left">
+      <>
+        <h1>Our services</h1>
+        <div className="home-cards-link-wrapper">{displayedHomeCards}</div>
+      </>
+    </PageSection>
   );
 };

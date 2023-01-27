@@ -1,0 +1,154 @@
+@import "styles/global.scss";
+
+.site-footer {
+  background: $global-color;
+  color: white;
+  padding: 30px;
+
+  .site-grid {
+    @media screen and (max-width: 640px) {
+      padding-top: 10px;
+    }
+  }
+
+  .service-links {
+    &-container {
+      padding: 0px 20px;
+      @media screen and (max-width: 640px) {
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid gray;
+      }
+
+      h3 {
+        margin: 10px 0px;
+      }
+    }
+
+    &-handle {
+      margin: 5px 0px;
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 700;
+        transform: translate3d(-100%, 0, 0);
+      }
+    }
+  }
+
+  .footer-contact {
+    &-container {
+      padding: 0px 20px;
+      text-align: center;
+
+      @media screen and (max-width: 640px) {
+        padding: 20px;
+      }
+
+      h3 {
+        margin: 0px 0px 20px;
+        text-align: center;
+        a {
+          color: #ffffff;
+        }
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .footer-contact-btn {
+        span {
+          position: relative;
+          display: inline-flex;
+          width: 180px;
+          height: 55px;
+          margin: 0 15px;
+          perspective: 1000px;
+
+          a {
+            font-size: 19px;
+            letter-spacing: 1px;
+            transform-style: preserve-3d;
+            transform: translateZ(-25px);
+            transition: transform 0.25s;
+            font-family: $global-font;
+
+            &:before,
+            &:after {
+              position: absolute;
+              height: 55px;
+              width: 180px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 5px solid black;
+              box-sizing: border-box;
+              border-radius: 5px;
+            }
+
+            &:before {
+              color: black;
+              background: white;
+              transform: rotateY(0deg) translateZ(25px);
+            }
+
+            &:after {
+              color: white;
+              background: $global-color(73, 73, 73);
+              transform: rotateX(90deg) translateZ(25px);
+            }
+
+            &:hover {
+              transform: translateZ(-30px) rotateX(-90deg);
+            }
+
+            &:nth-child(1) {
+              &:before,
+              &:after {
+                content: "EMAIL US";
+              }
+            }
+          }
+        }
+      }
+
+      .footer-icons {
+        display: flex;
+        margin-top: 20px;
+
+        &-link {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .service-links {
+    &-container {
+      grid-column: span 6;
+
+      h3 {
+        font-size: 25px;
+      }
+    }
+
+    &-handle {
+      margin: 10px 0px !important;
+    }
+  }
+
+  .footer-contact-container {
+    grid-column: span 12;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .service-links {
+    &-container {
+      grid-column: span 12;
+    }
+  }
+}

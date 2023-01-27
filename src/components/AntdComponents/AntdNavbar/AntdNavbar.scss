@@ -1,0 +1,118 @@
+@import "styles/global.scss";
+
+.ant-menu {
+  background: $global-color;
+  color: white;
+  font-weight: 600;
+  font-family: $global-font;
+
+  &-item {
+    cursor: pointer;
+
+    &-selected,
+    &-active {
+      color: $global-color !important;
+      background: white !important;
+    }
+  }
+
+  &-submenu-selected,
+  &-submenu-selected > .ant-menu-submenu-title,
+  &-submenu-selected,
+  &-submenu-active,
+  &-submenu-open,
+  &-submenu-title:hover {
+    color: $global-color !important;
+    background: white !important;
+  }
+}
+
+header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+  display: flex;
+  border-bottom: 1px solid #857b7b;
+
+  .menu-logo {
+    width: 15vw;
+    background: $global-color;
+    text-align: center;
+
+    &-image {
+      padding: 4px 0px;
+      max-width: 79px;
+      background: $global-color !important;
+      width: 100%;
+      height: auto;
+    }
+
+    @media screen and (max-width: 1000px) {
+      width: 85vw;
+      padding: 0px 10px;
+      text-align: left;
+    }
+  }
+
+  .desktop-menu {
+    width: 85vw;
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+}
+
+.mobile {
+  &-navbar,
+  &-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .mobile {
+    &-navbar {
+      background: $global-color;
+      color: white;
+      height: 46px;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
+      &-btn {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      span {
+        text-align: center;
+        font-size: 30px;
+        align-self: center;
+        padding: 10px;
+      }
+    }
+
+    &-menu {
+      display: block;
+      &-container {
+        border-top: 1px solid #808080;
+        position: fixed;
+        top: 0;
+        background: $global-color;
+        color: white;
+        width: 100%;
+        z-index: 1;
+        top: 46px;
+        z-index: 10;
+        width: "100vw";
+        background: $global-color;
+      }
+    }
+  }
+}

@@ -1,7 +1,5 @@
 @import "./grid.scss";
 @import "aos/dist/aos.css";
-@import "slick-carousel/slick/slick.css";
-@import "slick-carousel/slick/slick-theme.css";
 @import "styles/global.scss";
 
 html,
@@ -12,13 +10,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
-  // overflow: hidden;
   background: $global-color;
-  color: black;
+  color: $global-color;
 }
 
 main {
-  background: white;
+  background: #fff;
   overflow: scroll;
 }
 

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+@import "styles/mixin.scss";
+@import "styles/global.scss";
+
+.home-about-container {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  margin: 80px auto 0px;
+  min-height: 50vh;
+
+  .home-about {
+    &-image {
+      width: 50%;
+      padding: 80px 0px 0px 0px;
+      margin-right: -75px;
+      z-index: 1;
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: #32325d40 0px 50px 100px -20px,
+          #0000004d 0px 30px 60px -30px;
+      }
+    }
+
+    &-caption {
+      min-height: 350px;
+      width: 50%;
+      border-radius: 4px 4px 4px 4px;
+      margin-bottom: 50px;
+      padding: 20px 0px 0px 0px;
+      background: $global-color;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px;
+
+      h2 {
+        text-align: center;
+        margin: 0px;
+        font-size: 30px;
+      }
+
+      p {
+        padding: 0px 10px 0px 90px;
+        font-size: 20px;
+      }
+
+      button {
+        width: 200px;
+        margin: 10px auto 0px;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #003366;
+        background: white;
+        border: 0px;
+        border-radius: 4px;
+
+        &:hover {
+          background: $global-color;
+          color: white;
+          border: 1px solid white;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .home-about {
+      &-caption {
+        h2 {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 80vw;
+    flex-direction: column;
+    .home-about {
+      &-image {
+        padding: 0px;
+        margin-bottom: -50px;
+      }
+
+      &-caption {
+        margin-left: 50px;
+
+        p {
+          padding: 30px;
+          margin: 0px;
+        }
+
+        h2 {
+          font-size: 25px;
+        }
+
+        button {
+          margin: 0px auto;
+        }
+      }
+
+      &-image,
+      &-caption {
+        width: 80%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    width: 95vw;
+    .home-about {
+      &-image {
+        margin: 0px auto -30px;
+      }
+
+      &-caption {
+        padding: 0px;
+        margin: auto;
+
+        p {
+          padding: 10px 20px 20px;
+          font-size: 16px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
