@@ -1,4 +1,5 @@
 import { PageSection } from "components/PageComponents/PageSection";
+import { paragraphParser } from "utils/stringHelpers";
 
 interface IServicePageAbout {
   title: string;
@@ -7,10 +8,10 @@ interface IServicePageAbout {
 
 export const ServicePageAbout = ({ title, description }: IServicePageAbout) => {
   return (
-    <PageSection transition="fade-right" duration="2500" margin="20px 0px">
+    <PageSection transition="fade-right" duration="7000" margin="20px 0px">
       <article>
         <h2>{title}</h2>
-        <p>{description}</p>
+        <div className="article-text">{paragraphParser(description)}</div>
       </article>
     </PageSection>
   );

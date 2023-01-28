@@ -38,6 +38,10 @@ article {
   max-width: 36em;
   margin: 0 auto;
   padding: 1em;
+
+  .article-text {
+    text-align: left;
+  }
 }
 
 .service-page-gallery {

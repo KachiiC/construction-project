@@ -1,10 +1,10 @@
+import BathroomImg from "assets/images/service_images/bathrooms.jpg";
 import BuildingImg from "assets/images/service_images/building.jpg";
 import CarpentryImg from "assets/images/service_images/carpentry.jpg";
-import DrainsImg from "assets/images/service_images/drains.jpg";
 import ElectricsImg from "assets/images/service_images/electrics.jpg";
-import HeatingImg from "assets/images/service_images/heating.jpg";
 import KitchenImg from "assets/images/service_images/kitchen.jpg";
-import LocksImg from "assets/images/service_images/locks.jpg";
+import MechanicalImg from "assets/images/service_images/locks.jpg";
+import PaintingImg from "assets/images/service_images/painting.jpg";
 import PlumbingImg from "assets/images/service_images/plumbing.jpg";
 import RoofingImg from "assets/images/service_images/roofing.jpg";
 
@@ -19,7 +19,7 @@ export const ServicesCardsData = [
   },
   {
     title: "Bathrooms",
-    image: DrainsImg
+    image: BathroomImg
   },
   {
     title: "Plumbing",
@@ -31,7 +31,7 @@ export const ServicesCardsData = [
   },
   {
     title: "Mechanical",
-    image: LocksImg
+    image: MechanicalImg
   },
   {
     title: "Carpentry",
@@ -43,6 +43,6 @@ export const ServicesCardsData = [
   },
   {
     title: "Painting and Decorating",
-    image: HeatingImg
+    image: PaintingImg
   }
 ];
