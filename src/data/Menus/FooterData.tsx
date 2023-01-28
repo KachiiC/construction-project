@@ -7,7 +7,7 @@ import {
 
 import { IFooterLinks } from "components/PageComponents/PageFooter/Footer.types";
 import { legalList } from "data/LegalData";
-import { serviceList } from "data/Services/ServicesData";
+import { serviceListData } from "routes/ServicesRoutesData";
 
 export const FooterIconsList = (fontSize: string, color: string) => {
   const style = { fontSize, color };
@@ -34,7 +34,7 @@ export const FooterIconsList = (fontSize: string, color: string) => {
 export const footerLinksSectionsData: IFooterLinks[] = [
   {
     section: "Our Services",
-    links: Object.keys(serviceList)
+    links: Object.keys(serviceListData)
   },
   {
     section: "Legal & More",

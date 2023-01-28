@@ -9,14 +9,13 @@ body {
   font-family: $global-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100vw;
   background: $global-color;
   color: $global-color;
 }
 
 main {
   background: #fff;
-  overflow: scroll;
+  overflow-x: hidden;
 }
 
 code {

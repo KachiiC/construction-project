@@ -4,7 +4,7 @@ import { FC } from "react";
 import { PageSection } from "components/PageComponents/PageSection";
 
 export const HomeTestimony: FC = () => (
-  <PageSection duration="2500" transition="fade-right">
+  <PageSection duration="2500" transition="fade-right" margin="60px 20px">
     <div className="about-quote-container">
       <h1>
         Intuitive design happens when{" "}

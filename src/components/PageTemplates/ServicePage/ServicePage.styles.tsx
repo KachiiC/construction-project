@@ -12,3 +12,11 @@ export const StyledServicePageHero = styled.div<any>`
   background-size: cover;
   opacity: 0.9;
 `;
+
+export const tagStyle = {
+  border: "1px solid white",
+  fontSize: "18px",
+  padding: "8px",
+  margin: "5px",
+  fontWeight: "600"
+};

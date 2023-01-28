@@ -1,7 +1,7 @@
 @import "styles/mixin.scss";
 @import "styles/global.scss";
 
-.home-cards-link {
+.service-cards-link {
   * {
     margin: 0;
     padding: 0;
@@ -30,7 +30,7 @@
     grid-auto-rows: 200px;
     grid-auto-flow: dense;
 
-    .home-cards-link-container {
+    .service-cards-link-container {
       position: relative;
       text-align: center;
       justify-content: center;

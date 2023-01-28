@@ -1,6 +1,4 @@
-import "./Section.scss";
-
-import { sectionProps } from "./PageSection.types";
+import { ISectionProps } from "./Section.types";
 
 export const PageSection = ({
   children,
@@ -8,7 +6,7 @@ export const PageSection = ({
   duration,
   margin,
   padding
-}: sectionProps) => {
+}: ISectionProps) => {
   const styles = {
     margin,
     padding

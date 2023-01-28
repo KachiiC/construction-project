@@ -1,5 +1,4 @@
 .case-study-page {
-  
   .case-study-container {
     padding: 30px;
     display: flex;
@@ -17,6 +16,7 @@
     .case-study-grid,
     .case-study-caption {
       width: 45vw;
+      border: 1px solid red;
     }
 
     .case-study-grid {
@@ -33,11 +33,11 @@
 
     .case-study-caption {
       padding: 10px;
-      
+
       h3 {
         font-size: 20px;
       }
-      
+
       p {
         text-align: left;
       }

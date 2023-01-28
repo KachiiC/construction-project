@@ -9,13 +9,13 @@ import {
 
 import { MenuProps } from "antd";
 import { labelKey } from "utils/routeHelper";
-import { serviceList } from "data/Services/ServicesData";
+import { serviceListData } from "routes/ServicesRoutesData";
 
 const servicesSubMenu = {
   label: "Services",
   key: "services",
   icon: <ToolOutlined />,
-  children: Object.keys(serviceList).map((item) => labelKey(item))
+  children: Object.keys(serviceListData).map((item) => labelKey(item))
 };
 
 export const navbarItems: MenuProps["items"] = [

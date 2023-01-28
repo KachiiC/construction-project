@@ -1,7 +1,7 @@
 import { PageContainer } from "components/PageComponents/PageContainer";
 import { createBrowserRouter } from "react-router-dom";
 import { legalRoutes } from "data/LegalData";
-import { serviceRoutes } from "data/Services/ServicesData";
+import { serviceRoutes } from "routes/ServicesRoutesData";
 import { staticRoutes } from "routes/RoutesData";
 
 export const routeValues = [...staticRoutes, ...serviceRoutes, ...legalRoutes];

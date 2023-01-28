@@ -1,12 +1,7 @@
+import { ICaseStudy } from "../CaseStudyPage.types";
 import { Image } from "antd";
 
-export const CaseStudy = ({
-  title,
-  images
-}: {
-  title: string;
-  images: string[];
-}) => {
+export const CaseStudy = ({ title, images, featured }: ICaseStudy) => {
   const displayedImages = images.map((img, index) => (
     <div className="site-col-4" key={index}>
       <Image src={img} alt="" />
@@ -16,7 +11,12 @@ export const CaseStudy = ({
   return (
     <div className="case-study-container">
       <div className="case-study-grid">
-        <div className="site-grid">{displayedImages}</div>
+        <div className="site-grid">
+          <div className="site-col-12">
+            <Image src={featured} alt="" />
+          </div>
+          {displayedImages}
+        </div>
       </div>
       <div className="case-study-caption">
         <h3>{title}</h3>

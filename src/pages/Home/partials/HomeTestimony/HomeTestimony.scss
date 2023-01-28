@@ -29,6 +29,10 @@
       border-radius: 20px;
       padding: 25px;
 
+      @media screen and (max-width: 480px) {
+        font-size: 2rem;
+      }
+
       &:after {
         content: "";
         position: absolute;

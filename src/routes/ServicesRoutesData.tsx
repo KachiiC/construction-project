@@ -10,7 +10,7 @@ import RoofingImg from "assets/images/service_images/roofing.jpg";
 import { ServicePage } from "components/PageTemplates/ServicePage";
 import { lowerCaseDash } from "utils/routeHelper";
 
-export const serviceList = {
+export const serviceListData = {
   Building: <ServicePage heroTitle="Building" heroImage={BuildingImg} />,
   Kitchens: <ServicePage heroTitle="Kitchens" heroImage={KitchensImg} />,
   Bathrooms: <ServicePage heroTitle="Bathrooms" heroImage={BathroomsImg} />,
@@ -24,16 +24,9 @@ export const serviceList = {
   )
 };
 
-export const servicesCardsData = Object.entries(serviceList).map((data) => {
+export const serviceRoutes = Object.entries(serviceListData).map((data) => {
   return {
-    key: lowerCaseDash(data[0]),
+    path: lowerCaseDash(data[0]),
     component: data[1]
-  };
-});
-
-export const serviceRoutes = servicesCardsData.map(({ key, component }) => {
-  return {
-    path: key,
-    component
   };
 });

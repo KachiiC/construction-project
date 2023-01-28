@@ -1,6 +1,7 @@
 import "./SiteCardText.scss";
 
 import { ISiteCardText } from "./SiteCardText.types";
+import { Link } from "react-router-dom";
 
 export const SiteCardText = ({
   heading,
@@ -17,7 +18,9 @@ export const SiteCardText = ({
       <div className="home-about-caption">
         <h2>{heading}</h2>
         <p>{text}</p>
-        <button>{buttonText}</button>
+        <Link to={buttonLink}>
+          <button>{buttonText}</button>
+        </Link>
       </div>
     </div>
   );
