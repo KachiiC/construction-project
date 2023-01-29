@@ -12,4 +12,5 @@ export interface ISectionProps {
   duration?: string;
   margin?: string;
   padding?: string;
+  className?: string;
 }

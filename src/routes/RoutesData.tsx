@@ -3,12 +3,13 @@ import { CaseStudyPage } from "components/PageTemplates/CaseStudyPage";
 import Contact from "pages/Contact";
 import Error from "pages/Error";
 import Home from "pages/Home";
+import { exampleCaseStudy } from "data/CaseStudies/ExampleCaseStudies";
 
 export const routesObj = {
   "/": <Home />,
   about: <About />,
-  "commercial-case-studies": <CaseStudyPage />,
-  "domestic-case-studies": <CaseStudyPage />,
+  "commercial-case-studies": <CaseStudyPage data={exampleCaseStudy} />,
+  "domestic-case-studies": <CaseStudyPage data={exampleCaseStudy} />,
   contact: <Contact />,
   "*": <Error />
 };

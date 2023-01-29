@@ -1,4 +1,55 @@
 // general
+@import "styles/mixin.scss";
+@import "styles/global.scss";
+
+.service-page {
+  display: flex;
+
+  &-container {
+    width: 70vw;
+    padding: 0px 20px;
+  }
+
+  &-navbar {
+    width: 30vw;
+    padding: 20px;
+
+    .sidebar-service-container {
+      position: relative;
+      text-align: center;
+      width: 80%;
+      margin: 0px auto 10px;
+      cursor: pointer;
+      @include magic-border(3px, $global-color, 0.15s, 0);
+
+      &::before {
+        height: 100%;
+      }
+
+      h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -40%);
+        margin: 0px;
+      }
+
+      img {
+        opacity: 0.75;
+      }
+
+      &:hover > img {
+        opacity: 0.5;
+      }
+    }
+
+    .sidebar-service-card {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+  }
+}
 
 .service-page-hero-header {
   display: flex;
@@ -12,6 +63,7 @@
   font-size: 12vh;
   font-weight: bold;
   line-height: 0.9;
+
   @media only screen and (min-width: 32em) {
     font-size: 16vh;
   }
@@ -46,13 +98,16 @@ article {
 
 .service-page-gallery {
   display: flex;
-  width: 90vw;
+  width: 100%;
   margin: auto;
-  flex-flow: wrap;
+  // flex-flow: wrap;
   justify-content: space-around;
 
   &-image {
     padding: 20px;
+    width: 400px;
+    height: auto;
+
     overflow: hidden;
     img {
       height: 200px;
@@ -73,6 +128,7 @@ article {
 
 .service-page-questions {
   margin: 40px auto 20px;
+  width: 80%;
 
   h3 {
     margin-bottom: 40px;
@@ -80,13 +136,15 @@ article {
 }
 
 .service-page-list {
-  width: 80vw;
+  width: 100%;
   margin: auto;
 
   .service-page-tags-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    width: 80%;
+    margin: auto;
   }
 
   @media screen and (max-width: 1080px) {

@@ -3,3 +3,8 @@ export interface ICaseStudy {
   images: string[];
   featured: string;
 }
+
+
+export interface ICaseStudyPage {
+  data: ICaseStudy[];
+}

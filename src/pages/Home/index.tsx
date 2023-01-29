@@ -2,15 +2,15 @@ import "./Home.scss";
 
 import { FC } from "react";
 import { HomeAbout } from "./partials/HomeAbout";
-import { HomeCards } from "./partials/HomeCards";
 import { HomeHero } from "./partials/HomeHero";
 import { HomeTestimony } from "./partials/HomeTestimony";
+import { ServiceCards } from "components/CustomComponents/ServiceCards";
 
 const Home: FC = () => (
   <>
     <HomeHero />
     <HomeAbout />
-    <HomeCards />
+    <ServiceCards />
     <HomeTestimony />
   </>
 );

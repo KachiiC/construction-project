@@ -1,34 +1,12 @@
 import "./CaseStudyPage.scss";
 
-import {
-  exampleFeaturedImage,
-  exampleImages
-} from "data/CaseStudies/ExampleCaseStudies";
-
 import { CaseStudy } from "./partials/CaseStudy";
-import { FC } from "react";
+import { ICaseStudyPage } from "./CaseStudyPage.types";
 
-export const CaseStudyPage: FC = () => (
-  <div className="case-study-page">
-    <CaseStudy
-      title="Case Study One"
-      images={exampleImages}
-      featured={exampleFeaturedImage}
-    />
-    <CaseStudy
-      title="Case Study Two"
-      images={exampleImages}
-      featured={exampleFeaturedImage}
-    />
-    <CaseStudy
-      title="Case Study Three"
-      images={exampleImages}
-      featured={exampleFeaturedImage}
-    />
-    <CaseStudy
-      title="Case Study Four"
-      images={exampleImages}
-      featured={exampleFeaturedImage}
-    />
-  </div>
-);
+export const CaseStudyPage = ({ data }: ICaseStudyPage) => {
+  const displayedCases = data.map((caseStudy, index) => (
+    <CaseStudy key={index} {...caseStudy} />
+  ));
+
+  return <div className="case-study-page">{displayedCases}</div>;
+};

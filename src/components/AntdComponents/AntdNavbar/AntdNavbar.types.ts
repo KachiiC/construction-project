@@ -20,3 +20,7 @@ export interface IDesktopNavbar {
   current: string;
   data: MenuProps["items"];
 }
+
+export interface INavbarLogo {
+  navbarImage: string;
+}

@@ -1,6 +1,7 @@
 .case-study-page {
   .case-study-container {
     padding: 30px;
+    height: 100%;
     display: flex;
     flex-flow: wrap;
     justify-content: space-evenly;
@@ -16,14 +17,21 @@
     .case-study-grid,
     .case-study-caption {
       width: 45vw;
-      border: 1px solid red;
     }
 
     .case-study-grid {
       width: 25%;
-      .site-col-4 img {
-        width: 100%;
-        height: auto;
+      .site-col-12 {
+        padding: 5px 0px 0px 2.5px;
+      }
+      .site-col-4 {
+        padding: 5px 2.5px;
+        padding-right: 0px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
 
       @media screen and (max-width: 835px) {

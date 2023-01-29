@@ -1,4 +1,4 @@
-import BathroomImg from "assets/images/service_images/drains.jpg";
+import BathroomImg from "assets/images/service_images/bathrooms.jpg";
 import { exampleQuestionsData } from "./Example";
 
 export const BathroomDataList = [

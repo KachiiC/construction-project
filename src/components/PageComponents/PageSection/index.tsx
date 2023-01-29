@@ -5,7 +5,8 @@ export const PageSection = ({
   transition,
   duration,
   margin,
-  padding
+  padding,
+  className
 }: ISectionProps) => {
   const styles = {
     margin,
@@ -13,7 +14,12 @@ export const PageSection = ({
   };
 
   return (
-    <section data-aos={transition} data-aos-duration={duration} style={styles}>
+    <section
+      data-aos={transition}
+      data-aos-duration={duration}
+      style={styles}
+      className={className}
+    >
       {children}
     </section>
   );

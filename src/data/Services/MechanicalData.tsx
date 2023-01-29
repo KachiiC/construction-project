@@ -1,6 +1,6 @@
 import { exampleQuestionsData, exampleServiceListData } from "./Example";
 
-import MechanicalImg from "assets/images/service_images/locks.jpg";
+import MechanicalImg from "assets/images/service_images/mechanical.jpg";
 
 export const MechanicalData = {
   title: "Mechanical",

@@ -7,7 +7,7 @@ export interface IServicePageQuestions {
 export interface IServicePage {
   description: string;
   title: string;
-  hero?: string;
+  image?: string;
   questions: IAntdSingleCollapse[];
   list: string[];
 }

@@ -3,7 +3,7 @@ import BuildingImg from "assets/images/service_images/building.jpg";
 import CarpentryImg from "assets/images/service_images/carpentry.jpg";
 import ElectricsImg from "assets/images/service_images/electrics.jpg";
 import KitchenImg from "assets/images/service_images/kitchen.jpg";
-import MechanicalImg from "assets/images/service_images/locks.jpg";
+import MechanicalImg from "assets/images/service_images/mechanical.jpg";
 import PaintingImg from "assets/images/service_images/painting.jpg";
 import PlumbingImg from "assets/images/service_images/plumbing.jpg";
 import RoofingImg from "assets/images/service_images/roofing.jpg";

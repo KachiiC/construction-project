@@ -28,6 +28,21 @@ export const ServicePageGallery: FC = () => {
           <div className="service-page-gallery-image">
             <Image src={KitchensImg} />
           </div>
+          <div className="service-page-gallery-image">
+            <Image src={BathroomsImg} />
+          </div>
+          <div className="service-page-gallery-image">
+            <Image src={BuildingImg} />
+          </div>
+          <div className="service-page-gallery-image">
+            <Image src={CarpentryImg} />
+          </div>
+          <div className="service-page-gallery-image">
+            <Image src={ElectricsImg} />
+          </div>
+          <div className="service-page-gallery-image">
+            <Image src={KitchensImg} />
+          </div>
         </div>
       </div>
     </PageSection>
