@@ -1,50 +1,41 @@
-import BathroomsImg from "assets/images/service_images/bathrooms.jpg";
-import BuildingImg from "assets/images/service_images/building.jpg";
-import CarpentryImg from "assets/images/service_images/carpentry.jpg";
-import ElectricsImg from "assets/images/service_images/electrics.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import { FC } from "react";
 import { Image } from "antd";
-import KitchensImg from "assets/images/service_images/kitchen.jpg";
+import { Navigation } from "swiper";
 import { PageSection } from "components/PageComponents/PageSection";
+import { ResponsiveContainer } from "utils/imageHelper";
+import { ServicesCardsData } from "data/Services/ServiceCardsData";
 
 export const ServicePageGallery: FC = () => {
+  const galleryImage = ServicesCardsData.map(({ image }) => image);
+
   return (
-    <PageSection transition="fade-left" duration="4000" margin="80px 0px">
-      <div>
-        <h3>Our Work</h3>
-        <div className="service-page-gallery">
-          <div className="service-page-gallery-image">
-            <Image src={BathroomsImg} />
-          </div>
-          <div className="service-page-gallery-image">
-            <Image src={BuildingImg} />
-          </div>
-          <div className="service-page-gallery-image">
-            <Image src={CarpentryImg} />
-          </div>
-          <div className="service-page-gallery-image">
-            <Image src={ElectricsImg} />
-          </div>
-          <div className="service-page-gallery-image">
-            <Image src={KitchensImg} />
-          </div>
-          <div className="service-page-gallery-image">
-            <Image src={BathroomsImg} />
-          </div>
-          <div className="service-page-gallery-image">
-            <Image src={BuildingImg} />
-          </div>
-          <div className="service-page-gallery-image">
-            <Image src={CarpentryImg} />
-          </div>
-          <div className="service-page-gallery-image">
-            <Image src={ElectricsImg} />
-          </div>
-          <div className="service-page-gallery-image">
-            <Image src={KitchensImg} />
-          </div>
-        </div>
-      </div>
+    <PageSection
+      transition="fade-left"
+      duration="4000"
+      margin="80px auto"
+      padding="10px"
+      className="service-page-slider"
+    >
+      <>
+        <h2>Our Work</h2>
+        <Swiper
+          slidesPerView={2}
+          modules={[Navigation]}
+          navigation={true}
+        >
+          {galleryImage.map((image, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <ResponsiveContainer maxHeight={"200"}>
+                  <Image src={image} height="100%" width="100%" />
+                </ResponsiveContainer>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </>
     </PageSection>
   );
 };

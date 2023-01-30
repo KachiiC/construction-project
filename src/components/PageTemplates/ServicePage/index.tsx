@@ -13,7 +13,8 @@ export const ServicePage = ({
   description,
   image,
   questions,
-  list
+  list,
+  related
 }: IServicePage) => {
   return (
     <>
@@ -26,7 +27,7 @@ export const ServicePage = ({
             <ServicePageQuestions questionsData={questions} />
             <ServicePageGallery />
           </div>
-          <ServicePageSidebar />
+          <ServicePageSidebar related={related}/>
         </div>
       </div>
     </>

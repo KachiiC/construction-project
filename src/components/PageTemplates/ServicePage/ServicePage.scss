@@ -2,51 +2,99 @@
 @import "styles/mixin.scss";
 @import "styles/global.scss";
 
+.responsive-image-container {
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
 .service-page {
   display: flex;
 
+  @media screen and (max-width: 900px) {
+    display: block;
+  }
+
   &-container {
-    width: 70vw;
+    width: 65vw;
     padding: 0px 20px;
+
+    @media screen and (max-width: 900px) {
+      width: 90vw;
+    }
   }
 
   &-navbar {
-    width: 30vw;
+    width: 35vw;
     padding: 20px;
 
-    .sidebar-service-container {
-      position: relative;
-      text-align: center;
-      width: 80%;
-      margin: 0px auto 10px;
-      cursor: pointer;
-      @include magic-border(3px, $global-color, 0.15s, 0);
+    &-card {
+      &-container {
+        position: relative;
+        text-align: center;
+        width: 80%;
+        margin: 0px auto 10px;
+        cursor: pointer;
+        @include magic-border(3px, $global-color, 0.15s, 0);
 
-      &::before {
-        height: 100%;
-      }
+        &::before {
+          height: 100%;
+        }
 
-      h3 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-40%, -40%);
-        margin: 0px;
-      }
+        h3 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-40%, -40%);
+          margin: 0px;
+        }
 
-      img {
-        opacity: 0.75;
-      }
+        img {
+          opacity: 0.75;
+          width: 100%;
+          height: auto;
+          cursor: pointer;
+        }
 
-      &:hover > img {
-        opacity: 0.5;
+        &:hover > img {
+          opacity: 0.5;
+        }
       }
     }
 
-    .sidebar-service-card {
-      width: 100%;
-      height: auto;
-      cursor: pointer;
+    &-contact {
+      &-btn {
+        margin: 10px;
+        a {
+          text-decoration: none;
+          display: block;
+          padding: 10px;
+          background: #003366;
+          color: white;
+          font-weight: 900;
+          margin: 20px 0px;
+          border-radius: 5px;
+          border: 3px solid #003366;
+
+          &:hover {
+            color: #003366;
+            background: white;
+          }
+        }
+      }
+
+      &-icons {
+        margin: 20px 0px;
+
+        a {
+          padding: 5px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      display: none;
     }
   }
 }
@@ -87,42 +135,21 @@
 }
 
 article {
-  max-width: 36em;
+  width: 80%;
   margin: 0 auto;
-  padding: 1em;
 
   .article-text {
     text-align: left;
   }
 }
 
-.service-page-gallery {
-  display: flex;
-  width: 100%;
+.service-page-slider {
+  width: 90%;
   margin: auto;
-  // flex-flow: wrap;
-  justify-content: space-around;
 
-  &-image {
-    padding: 20px;
-    width: 400px;
-    height: auto;
-
-    overflow: hidden;
-    img {
-      height: 200px;
-      width: 200px;
-      max-height: 200px;
-      max-width: 200px;
-      object-fit: fill;
-
-      @media screen and (max-width: 640px) {
-        max-height: 100vw;
-        max-width: 100vw;
-        height: auto;
-        width: auto;
-      }
-    }
+  img {
+    // width: 300px !important;
+    // height: 200px !important;
   }
 }
 

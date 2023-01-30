@@ -1,6 +1,6 @@
 export interface IAntdSingleCollapse {
   title: string;
-  content: JSX.Element | string;
+  content: string;
 }
 export interface IAntdCollapse {
   data: IAntdSingleCollapse[];

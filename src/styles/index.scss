@@ -1,6 +1,8 @@
 @import "./grid.scss";
 @import "aos/dist/aos.css";
 @import "styles/global.scss";
+@import "swiper/css";
+@import "swiper/css/navigation";
 
 html,
 body {
@@ -26,4 +28,14 @@ code {
 .responsive-image {
   width: 100%;
   height: auto;
+}
+
+:root {
+  --swiper-theme-color: $global-color;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background: white;
+  padding: 5px;
 }

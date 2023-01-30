@@ -10,4 +10,9 @@ export interface IServicePage {
   image?: string;
   questions: IAntdSingleCollapse[];
   list: string[];
+  related: string[];
+}
+
+export interface IServicePageSidebar {
+  related: string[];
 }
