@@ -10,7 +10,11 @@ export const CaseStudy = ({ title, images, featured }: ICaseStudy) => {
   ));
 
   return (
-    <PageSection transition="zoom-in" className="case-study-container" duration="1500">
+    <PageSection
+      transition="zoom-in"
+      className="case-study-container"
+      duration="1500"
+    >
       <>
         <div className="case-study-grid">
           <div className="site-grid">

@@ -16,3 +16,7 @@ export interface IServicePage {
 export interface IServicePageSidebar {
   related: string[];
 }
+
+export interface IServicePageList {
+  serviceList: string[];
+}

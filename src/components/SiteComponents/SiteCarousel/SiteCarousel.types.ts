@@ -1,8 +1,9 @@
-export interface ISiteCarouselImage {
-  image: string;
-  caption?: string;
-}
-
 export interface ISiteCarousel {
-  data: ISiteCarouselImage[];
+  title: string;
+  images: {
+    image: string;
+  }[];
+  height: string;
+  width: string;
+  maxHeight: string;
 }

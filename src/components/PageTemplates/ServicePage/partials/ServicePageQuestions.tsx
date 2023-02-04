@@ -4,13 +4,11 @@ import { PageSection } from "components/PageComponents/PageSection";
 
 export const ServicePageQuestions = ({
   questionsData
-}: IServicePageQuestions) => {
-  return (
-    <PageSection transition="fade-right" duration="4000" margin="80px 0px">
-      <div className="service-page-questions">
-        <h3>Frequently Asked Questions</h3>
-        <AntdCollapse data={questionsData} />
-      </div>
-    </PageSection>
-  );
-};
+}: IServicePageQuestions) => (
+  <PageSection transition="fade-right" duration="4000" margin="80px 0px">
+    <div className="service-page-questions">
+      <h3>Frequently Asked Questions</h3>
+      <AntdCollapse data={questionsData} />
+    </div>
+  </PageSection>
+);

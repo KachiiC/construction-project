@@ -4,7 +4,7 @@ export const KitchensDataList = [
   "Plumbing",
   "Tiling & grouting",
   "Electrics",
-  "Gas​",
+  "Gas",
   "Refacing current cabinets & cupboards",
   "Fitting of Kitchen Worktops",
   "Cut out and Fit of Sink and Hob",

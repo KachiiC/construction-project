@@ -54,8 +54,8 @@ export const ServicePageSidebar = ({ related }: IServicePageSidebar) => {
 
   return (
     <div className="service-page-navbar">
-      <SideBarIcons />
       <SideBarCards />
+      <SideBarIcons />
     </div>
   );
 };

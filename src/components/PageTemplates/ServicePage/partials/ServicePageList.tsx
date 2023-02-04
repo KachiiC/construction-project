@@ -1,8 +1,9 @@
+import { IServicePageList } from "../ServicePage.types";
 import { PageSection } from "components/PageComponents/PageSection";
 import { Tag } from "antd";
 import { tagStyle } from "../ServicePage.styles";
 
-export const ServicePageList = ({ serviceList }: { serviceList: string[] }) => {
+export const ServicePageList = ({ serviceList }: IServicePageList) => {
   const displayedList = serviceList.map((point, index) => (
     <Tag color="#003366" key={index} style={tagStyle}>
       {point}

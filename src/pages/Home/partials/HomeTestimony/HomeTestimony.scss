@@ -1,6 +1,5 @@
 @import "styles/global.scss";
 
-/* center the blockquote in the page */
 .about-quote {
   &-wrapper {
     background: white;
@@ -9,7 +8,6 @@
     padding: 0 20px;
   }
 
-  /* Blockquote main style */
   &-container {
     position: relative;
     max-width: 620px;
