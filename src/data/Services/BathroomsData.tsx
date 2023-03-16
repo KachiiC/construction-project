@@ -1,21 +1,9 @@
 import BathroomImg from "assets/images/service_images/bathrooms.jpg";
 
 export const BathroomDataList = [
-  "Bespoke Bathroom Design",
-  "Bathroom Planning",
-  "Bathroom Refurbishments",
-  "Bathroom Repairs",
-  "Cloakroom Installations",
-  "Shower Pump Installs",
-  "Towel Rail Installations",
-  "Underfloor Heating",
-  "Wall Tiling",
-  "Wet Room Installations",
-  "Concealed Plumbing",
-  "Electrical Work",
-  "Floor Tiling",
-  "Sanitaryware Installation",
-  "Shower Installs"
+  "Complete refurbs",
+  "Plumbing",
+  "Tiling",
 ];
 
 export const BathroomQuestionsData = [

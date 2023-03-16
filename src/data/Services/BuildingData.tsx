@@ -1,33 +1,13 @@
 import BuildingImg from "assets/images/service_images/building.jpg";
 
 export const BuildingDataList = [
-  "Bathrooms",
-  "Block Paving",
-  "Brickwork Repairs",
-  "Brick Walls",
-  "Ceilings",
-  "Complete Refurbishments",
-  "Crazy Paving",
-  "Dado Rails & Skirting",
-  "Damp Proofing",
-  "Plasterboarding",
-  "Plastering",
-  "Rendering",
-  "Re-Pointing",
-  "Room Partitions",
-  "Small Building Works",
-  "Through Lounges",
-  "Wall & Floor Tiling",
-  "Wallpapering",
-  "Design & Project Management",
-  "Door Openings",
-  "Floor Repairs",
-  "Floor Screeding",
-  "Garden Patios",
-  "Garden Walls",
-  "General Repairs",
-  "Kitchens",
-  "Painting & Decorating"
+  "Complete refurbs",
+  "Block paving",
+  "Brickwork",
+  "Small building works",
+  "Large building works",
+  "Design and project management",
+  "Gardens"
 ];
 
 export const BuildingQuestionsData = [

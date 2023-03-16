@@ -1,19 +1,10 @@
 import KitchenImg from "assets/images/service_images/kitchen.jpg";
 
 export const KitchensDataList = [
+  "Complete refurbs",
+  "Tiling",
   "Plumbing",
-  "Tiling & grouting",
-  "Electrics",
-  "Gas",
-  "Refacing current cabinets & cupboards",
-  "Fitting of Kitchen Worktops",
-  "Cut out and Fit of Sink and Hob",
-  "Removal of Previous Kitchen",
-  "Appliance installation",
-  "Painting & decorating",
-  "Assembling and hanging cupboards",
-  "Assembling and mounting cabinets",
-  "Bespoke Kitchen Design"
+  "Joinery"
 ];
 
 export const KitchensQuestionsData = [

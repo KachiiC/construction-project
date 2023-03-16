@@ -1,30 +1,12 @@
 import RoofingImg from "assets/images/service_images/roofing.jpg";
 
 export const RoofingDataList = [
-  "Asphalt Roofs",
-  "Chimney Repairs",
-  "Felt Roofs",
-  "Flat Roofs",
-  "Garage Roofs",
-  "Guttering & Downpipes",
-  "Lead Roofs",
-  "Lead Work",
-  "Roof Window Repairs & Installs",
-  "Roofing Carpentry",
-  "Roofing Inspections & Reports",
-  "Roofing Insulation",
-  "Shed Roofs",
-  "Slate & Tiled Roofs",
-  "Soffits, Fascias & Cladding",
-  "Valleys & Gullies",
-  "Leaking Roofs – All Types",
-  "New Roofs & Re-Roofs",
-  "Pitched Roofs",
-  "Pointing",
-  "Porch Roofs",
-  "Roof Flashing",
-  "Roof Lights",
-  "Roof Repairs"
+  "Leaks",
+  "Complete new roofs",
+  "Repairs",
+  "Lead work",
+  "Flat roofs",
+  "Liquid systems"
 ];
 
 export const RoofingQuestionsData = [

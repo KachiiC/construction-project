@@ -1,5 +1,4 @@
 import {
-  FileSearchOutlined,
   FolderOutlined,
   HomeOutlined,
   MailOutlined,
@@ -31,14 +30,9 @@ export const navbarItems: MenuProps["items"] = [
   },
   servicesSubMenu,
   {
-    label: "Domestic Case Studies",
-    key: "domestic-case-studies",
+    label: "Case Studies",
+    key: "case-studies",
     icon: <FolderOutlined />
-  },
-  {
-    label: "Commercial Case Studies",
-    key: "commercial-case-studies",
-    icon: <FileSearchOutlined />
   },
   {
     label: "Contact",

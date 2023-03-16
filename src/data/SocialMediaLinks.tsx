@@ -18,7 +18,7 @@ export const SocialMediaIconsList = (fontSize: string, color: string) => {
     },
     {
       icon: <InstagramOutlined style={style} />,
-      link: "https://www.instagram.com/"
+      link: "https://www.instagram.com/vvspropertygroup/"
     },
     {
       icon: <YoutubeOutlined style={style} />,

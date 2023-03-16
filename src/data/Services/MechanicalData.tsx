@@ -1,26 +1,9 @@
 import MechanicalImg from "assets/images/service_images/mechanical.jpg";
 
 export const exampleServiceListData = [
-  "Airlock",
-  "Bathroom Refurbishment",
-  "Blocked Toilets, Sinks & Pipes",
-  "Ball Valves",
-  "Bidets",
-  "Burst Pipes",
-  "Floods",
-  "Gutters & Downpipes",
-  "Hot Cylinder Installations",
-  "Hot Water Problems",
-  "Showers & Pressure Adjustments",
-  "Stopcocks",
-  "Tap Repairs & Installations",
-  "Thermostat Problems",
-  "Toilet Repairs & Installs",
-  "Unvented & Vented Cylinders",
-  "Waste Disposals",
-  "Water Heater Repairs & Installs",
-  "Water Tank Installs",
-  "Wet Room Refurbishment"
+  "Heating",
+  "Ventilation",
+  "HVAC",
 ];
 
 export const exampleQuestionsData = [

@@ -1,36 +1,11 @@
 import PlumbingImg from "assets/images/service_images/plumbing.jpg";
 
 export const PlumbingDataList = [
-  "Airlocks",
-  "Ball Valves",
-  "Bathroom Refurbishment",
-  "Bidets",
-  "Blocked Toilets, Sinks & Pipes",
-  "Burst Pipes",
-  "Floods",
-  "Gutters & Downpipes",
-  "Hot Cylinder Installations",
-  "Hot Water Problems",
-  "Showers & Pressure Adjustments",
-  "Stopcocks",
-  "Tap Repairs & Installations",
-  "Thermostat Problems",
-  "Toilet Repairs & Installs",
-  "Unvented & Vented Cylinders",
-  "Waste Disposals",
-  "Water Heater Repairs & Installs",
-  "Water Tank Installs",
-  "Wet Room Refurbishment",
-  "Immersion Heaters",
-  "Kitchen Refurbishment",
+  "Bathrooms",
+  "Kitchens",
+  "Hot and cold water systems",
   "Leaks",
-  "Overflows",
-  "Pipework Replacement",
-  "Plumbing Installations",
-  "Pumps",
-  "Radiator & Valves",
-  "Repairs",
-  "Saniflo Installs"
+  "Drainage",
 ];
 
 export const PlumbingQuestionsData = [

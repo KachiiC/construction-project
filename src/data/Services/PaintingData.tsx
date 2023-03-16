@@ -1,19 +1,8 @@
 import PaintingImg from "assets/images/service_images/painting.jpg";
 
 export const PaintingDataList = [
-  "Anti Vandal Coatings",
-  "Door Stripping",
-  "Exterior Painting",
-  "Paint Spraying",
-  "Specialist Paint Effects",
-  "Repairing and fitting mouldings",
-  "Plastering and tiling",
-  "Wallpaper Hanging",
-  "Bespoke Paints",
-  "Correction of any cracks and holes before decorating",
-  "Prepare and paint any surface",
-  "Paint and wallpaper stripping",
-  "Varnishing"
+  "Complete refurbs",
+  "Wallpapering",
 ];
 
 export const PaintingQuestionsData = [

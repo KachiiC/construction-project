@@ -1,28 +1,13 @@
 import CarpentryImg from "assets/images/service_images/carpentry.jpg";
 
 export const CarpentryDataList = [
-  "Bespoke Solutions",
-  "Flooring Installations",
-  "Floorboards & Joists",
-  "Doors - Internal & External",
-  "Door Locks",
-  "Bathrooms",
-  "Kitchens",
-  "Integrated Appliance Fitting",
-  "Shelving",
-  "Wardrobes",
-  "Window & Frame Repair",
-  "Window Installation",
-  "Window Locks",
-  "Worktops",
-  "Boarding Up & Securing",
-  "Burglary Damage",
-  "Ceilings",
-  "Cupboards",
-  "Fitted Furniture",
-  "Plasterboard",
-  "Property Refurbishment",
-  "Radiator Cabinets"
+  "Roofing",
+  "1st fix carpentry",
+  "2nd fix carpentry",
+  "Flooring",
+  "Windows and doors",
+  "Room partitions",
+  "Bespoke joinery and wardrobes",
 ];
 
 export const CarpentryQuestionsData = [
