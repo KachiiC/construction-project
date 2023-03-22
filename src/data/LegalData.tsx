@@ -1,9 +1,8 @@
+import { Terms } from "pages/Terms";
 import { lowerCaseDash } from "utils/routeHelper";
 
 export const legalList = {
-  "Terms and Conditions": <h1>Terms & Conditions</h1>,
-  "Terms of Use": <h1>Website Terms of Use</h1>,
-  "Privacy Policy": <h1>Privacy Policy</h1>
+  "Terms and Conditions": <Terms />
 };
 
 export const legalData = Object.entries(legalList).map((data) => {
