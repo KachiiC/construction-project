@@ -8,9 +8,9 @@ interface IServicePageAbout {
 
 export const ServicePageAbout = ({ title, description }: IServicePageAbout) => (
   <PageSection transition="fade-right" duration="7000" margin="20px 0px">
-    <article>
+    <article className="service-page-about">
       <h2>{title}</h2>
-      <div className="article-text">{paragraphParser(description)}</div>
+      <div className="service-page-about-description">{paragraphParser(description)}</div>
     </article>
   </PageSection>
 );

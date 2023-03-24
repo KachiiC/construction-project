@@ -5,16 +5,27 @@ import { MailFilled, PhoneFilled } from "@ant-design/icons";
 const Contact = () => {
   return (
     <div className="contact-container">
-      <div className="phone-container">
-        <a href="mailto: abc@example.com">
-          <h2>Email</h2>
-          <h3>bwohlman@vvsproperty.co.uk</h3>
-          <MailFilled />
-        </a>
-      </div>
       <div className="email-container">
+        <h2>Email</h2>
+        <div className="email-links">
+          <a href="mailto: bwohlman@vvsproperty.co.uk">
+            <p>
+              <span>Ben:</span> bwohlman@vvsproperty.co.uk
+            </p>
+          </a>
+          <a href="mailto: jtran@vvsproperty.co.uk">
+            <p>
+              <span>Jimmy:</span> jtran@vvsproperty.co.uk
+            </p>
+          </a>
+        </div>
+        <MailFilled />
+      </div>
+      <div className="phone-container">
         <h2>Telephone</h2>
-        <h3>+44123456789</h3>
+        <a href="tel:+447437028636">
+          <h3>+447437028636</h3>
+        </a>
         <PhoneFilled />
       </div>
     </div>

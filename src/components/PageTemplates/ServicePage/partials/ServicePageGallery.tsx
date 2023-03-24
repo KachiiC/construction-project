@@ -7,7 +7,7 @@ export const ServicePageGallery: FC = () => (
   <PageSection
     transition="fade-left"
     duration="4000"
-    margin="80px auto"
+    margin="auto"
     padding="10px"
     className="service-page-slider"
   >

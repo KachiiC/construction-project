@@ -134,12 +134,17 @@
   }
 }
 
-article {
+.service-page-about {
   width: 80%;
   margin: 0 auto;
 
-  .article-text {
+  h2 {
+    font-size: 35px;
+  }
+
+  &-description {
     text-align: left;
+    font-size: 20px;
   }
 }
 
@@ -148,25 +153,33 @@ article {
   margin: auto;
 }
 
-.service-page-questions {
-  margin: 40px auto 20px;
-  width: 80%;
-
-  h3 {
-    margin-bottom: 40px;
-  }
-}
-
 .service-page-list {
   width: 100%;
   margin: auto;
 
-  .service-page-tags-container {
-    display: flex;
-    flex-wrap: wrap;
+  h3 {
+    font-size: 30px;
+  }
+
+  .service-page-tags {
     justify-content: flex-start;
     width: 80%;
     margin: auto;
+
+    &-row {
+      display: flex;
+      padding: 5px 0px;
+      align-items: self-end;
+    }
+
+    &-tick {
+      margin-right: 10px;
+      padding: 0px;
+    }
+
+    &-point {
+      font-size: 20px;
+    }
   }
 
   @media screen and (max-width: 1080px) {

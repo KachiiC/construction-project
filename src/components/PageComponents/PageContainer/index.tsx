@@ -1,6 +1,6 @@
 import "./PageContainer.scss";
 
-import { AntdNavbar } from "components/AntdComponents/AntdNavbar";
+import { AntdNavbar } from "components/AntdNavbar";
 import { Footer } from "components/PageComponents/PageFooter";
 import { IPageContainers } from "./PageContainers.types";
 import { init } from "aos";
