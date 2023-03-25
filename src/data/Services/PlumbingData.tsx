@@ -5,7 +5,7 @@ export const PlumbingDataList = [
   "Kitchens",
   "Hot and cold water systems",
   "Leaks",
-  "Drainage",
+  "Drainage"
 ];
 
 export const PlumbingData = {

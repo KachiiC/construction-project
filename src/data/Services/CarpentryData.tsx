@@ -7,9 +7,8 @@ export const CarpentryDataList = [
   "Flooring",
   "Windows and doors",
   "Room partitions",
-  "Bespoke joinery and wardrobes",
+  "Bespoke joinery and wardrobes"
 ];
-
 
 export const CarpentryData = {
   title: "Carpentry",

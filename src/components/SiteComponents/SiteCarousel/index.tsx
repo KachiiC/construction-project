@@ -1,5 +1,3 @@
-import "./SiteCarousel.scss";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { ISiteCarousel } from "./SiteCarousel.types";

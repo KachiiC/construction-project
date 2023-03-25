@@ -1,10 +1,6 @@
 import MechanicalImg from "assets/images/service_images/mechanical.jpg";
 
-export const exampleServiceListData = [
-  "Heating",
-  "Ventilation",
-  "HVAC",
-];
+export const exampleServiceListData = ["Heating", "Ventilation", "HVAC"];
 
 export const MechanicalData = {
   title: "Mechanical",

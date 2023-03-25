@@ -1,11 +1,6 @@
 import BathroomImg from "assets/images/service_images/bathrooms.jpg";
 
-export const BathroomDataList = [
-  "Complete refurbs",
-  "Plumbing",
-  "Tiling",
-];
-
+export const BathroomDataList = ["Complete refurbs", "Plumbing", "Tiling"];
 
 export const BathroomsData = {
   title: "Bathrooms",

@@ -5,7 +5,6 @@ export interface ICaseStudy {
   body: JSX.Element;
 }
 
-
 export interface ICaseStudyPage {
   data: ICaseStudy[];
 }

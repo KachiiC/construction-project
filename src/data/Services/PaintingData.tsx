@@ -1,9 +1,6 @@
 import PaintingImg from "assets/images/service_images/painting.jpg";
 
-export const PaintingDataList = [
-  "Complete refurbs",
-  "Wallpapering",
-];
+export const PaintingDataList = ["Complete refurbs", "Wallpapering"];
 
 export const PaintingData = {
   title: "Painting and Decorating",
