@@ -12,6 +12,7 @@ export const ServicePage = ({
   description,
   image,
   list,
+  galleryImages,
   related
 }: IServicePage) => {
   return (
@@ -21,7 +22,7 @@ export const ServicePage = ({
         <div className="service-page-container">
           <ServicePageAbout description={description} title={title} />
           <ServicePageList serviceList={list} />
-          <ServicePageGallery />
+          <ServicePageGallery images={galleryImages}/>
         </div>
         <ServicePageSidebar related={related} />
       </div>

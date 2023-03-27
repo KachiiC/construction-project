@@ -18,7 +18,7 @@ const displayedHomeCards = ServicesCardsData.map(({ title, image }) => (
 ));
 
 export const ServiceCards: FC = () => (
-  <PageSection duration="2500" transition="zoom-in" margin="60px 20px">
+  <PageSection duration="1000" transition="zoom-in" margin="60px 20px">
     <>
       <h1>Our services</h1>
       <div className="service-cards-link-wrapper">{displayedHomeCards}</div>

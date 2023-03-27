@@ -1,9 +1,16 @@
-import { FC } from "react";
+import {
+  IServicesCardsData,
+  ServicesCardsData
+} from "data/Services/ServiceCardsData";
+
 import { PageSection } from "components/PageComponents/PageSection";
-import { ServicesCardsData } from "data/Services/ServiceCardsData";
 import { SiteCarousel } from "components/SiteComponents/SiteCarousel";
 
-export const ServicePageGallery: FC = () => (
+interface IServicePageGallery {
+  images?: IServicesCardsData[];
+}
+
+export const ServicePageGallery = ({ images }: IServicePageGallery) => (
   <PageSection
     transition="fade-left"
     duration="4000"
@@ -13,7 +20,7 @@ export const ServicePageGallery: FC = () => (
   >
     <SiteCarousel
       title="Our Work"
-      images={ServicesCardsData}
+      images={images || ServicesCardsData}
       maxHeight={"200"}
       height="100%"
       width="100%"

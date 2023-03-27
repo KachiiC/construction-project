@@ -11,15 +11,15 @@ import { ServicePage } from "components/PageTemplates/ServicePage";
 import { lowerCaseDash } from "utils/routeHelper";
 
 export const serviceListData = {
-  Building: <ServicePage {...BuildingData} />,
-  Kitchens: <ServicePage {...KitchensData} />,
   Bathrooms: <ServicePage {...BathroomsData} />,
-  Plumbing: <ServicePage {...PlumbingData} />,
-  Electrical: <ServicePage {...ElectricalData} />,
-  Mechanical: <ServicePage {...MechanicalData} />,
+  Building: <ServicePage {...BuildingData} />,
   Carpentry: <ServicePage {...CarpentryData} />,
-  Roofing: <ServicePage {...RoofingData} />,
-  "Painting and Decorating": <ServicePage {...PaintingData} />
+  Electrical: <ServicePage {...ElectricalData} />,
+  Kitchens: <ServicePage {...KitchensData} />,
+  Mechanical: <ServicePage {...MechanicalData} />,
+  "Painting and Decorating": <ServicePage {...PaintingData} />,
+  Plumbing: <ServicePage {...PlumbingData} />,
+  Roofing: <ServicePage {...RoofingData} />
 };
 
 export const serviceRoutes = Object.entries(serviceListData).map((data) => {

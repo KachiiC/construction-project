@@ -6,7 +6,9 @@ export const FooterIcons: FC = () => {
 
   const displayedFooterIcons = iconsList.map(({ icon, link }) => (
     <div className="footer-icons-link" key={link}>
-      <a href={link}>{icon}</a>
+      <a href={link} target="_blank" rel="noreferrer">
+        {icon}
+      </a>
     </div>
   ));
 

@@ -8,7 +8,12 @@ import PaintingImg from "assets/images/service_images/painting.jpg";
 import PlumbingImg from "assets/images/service_images/plumbing.jpg";
 import RoofingImg from "assets/images/service_images/roofing.jpg";
 
-export const ServicesCardsData = [
+export interface IServicesCardsData {
+  title: string;
+  image: string;
+}
+
+export const ServicesCardsData: IServicesCardsData[] = [
   {
     title: "Building",
     image: BuildingImg

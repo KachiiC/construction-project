@@ -17,8 +17,8 @@ const SideBarIcons: FC = () => {
       <h2>Contact Us Now</h2>
       <div className="service-page-navbar-contact-icons">{displayedIcons}</div>
       <div className="service-page-navbar-contact-btn">
-        <a href="mailto:abc@example.com">Email Us Now</a>
-        <a href="tel:+447519547007">Phone Us Now</a>
+        <a href="mailto:bwohlman@vvsproperty.co.uk">Email Us Now</a>
+        <a href="tel:+447437028636">Phone Us Now</a>
       </div>
     </div>
   );
