@@ -3,7 +3,7 @@ import "./Home.scss";
 import { FC } from "react";
 import { HomeAbout } from "./partials/HomeAbout";
 import { HomeHero } from "./partials/HomeHero";
-import { HomeTestimony } from "./partials/HomeTestimony";
+// import { HomeTestimony } from "./partials/HomeTestimony";
 import { ServiceCards } from "components/ServiceCards";
 
 const Home: FC = () => (
@@ -11,7 +11,7 @@ const Home: FC = () => (
     <HomeHero />
     <HomeAbout />
     <ServiceCards />
-    <HomeTestimony />
+    {/* <HomeTestimony /> */}
   </>
 );
 
