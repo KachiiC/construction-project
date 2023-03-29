@@ -1,7 +1,7 @@
 import {
   FolderOutlined,
   HomeOutlined,
-  MailOutlined,
+  InfoCircleOutlined,
   PhoneOutlined,
   ToolOutlined
 } from "@ant-design/icons";
@@ -26,7 +26,7 @@ export const navbarItems: MenuProps["items"] = [
   {
     label: "About",
     key: "about",
-    icon: <MailOutlined />
+    icon: <InfoCircleOutlined />
   },
   servicesSubMenu,
   {
