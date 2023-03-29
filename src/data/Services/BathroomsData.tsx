@@ -1,3 +1,6 @@
+import Bathroom10Img from "assets/images/service_images/bathrooms/bathroom-10.jpg";
+import Bathroom11Img from "assets/images/service_images/bathrooms/bathroom-11.jpg";
+import Bathroom12Img from "assets/images/service_images/bathrooms/bathroom-12.jpg";
 import Bathroom1Img from "assets/images/service_images/bathrooms/bathroom-1.jpg";
 import Bathroom2Img from "assets/images/service_images/bathrooms/bathroom-2.jpg";
 import Bathroom3Img from "assets/images/service_images/bathrooms/bathroom-3.jpg";
@@ -6,6 +9,7 @@ import Bathroom5Img from "assets/images/service_images/bathrooms/bathroom-5.jpg"
 import Bathroom6Img from "assets/images/service_images/bathrooms/bathroom-6.jpg";
 import Bathroom7Img from "assets/images/service_images/bathrooms/bathroom-7.jpg";
 import Bathroom8Img from "assets/images/service_images/bathrooms/bathroom-8.jpg";
+import Bathroom9Img from "assets/images/service_images/bathrooms/bathroom-9.jpg";
 import BathroomImg from "assets/images/service_images/bathrooms.jpg";
 
 export const BathroomDataList = ["Complete Refurbish", "Plumbing", "Tiling"];
@@ -40,8 +44,24 @@ export const BathroomGalleryImages = [
     image: Bathroom7Img
   },
   {
-    title: "bathroom-8",
+    title: "bathroom-",
     image: Bathroom8Img
+  },
+  {
+    title: "bathroom-9",
+    image: Bathroom9Img
+  },
+  {
+    title: "bathroom-10",
+    image: Bathroom10Img
+  },
+  {
+    title: "bathroom-11",
+    image: Bathroom11Img
+  },
+  {
+    title: "bathroom-12",
+    image: Bathroom12Img
   },
 ];
 

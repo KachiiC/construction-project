@@ -9,5 +9,9 @@ export const FooterButtons: FC = () => (
       </span>
     </div>
     <FooterIcons />
+    <div className="footer-address">
+      <h3>Address</h3>
+      <p>9 Limes Grove Beckenham BR3 6NS</p>
+    </div>
   </div>
 );

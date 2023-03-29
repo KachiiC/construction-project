@@ -3,6 +3,7 @@ import Carpentry2Img from "assets/images/service_images/carpentry/carpentry-2.jp
 import Carpentry3Img from "assets/images/service_images/carpentry/carpentry-3.jpg";
 import Carpentry4Img from "assets/images/service_images/carpentry/carpentry-4.jpg";
 import Carpentry5Img from "assets/images/service_images/carpentry/carpentry-5.jpg";
+import Carpentry6Img from "assets/images/service_images/carpentry/carpentry-6.jpg";
 import CarpentryImg from "assets/images/service_images/carpentry.jpg";
 
 export const CarpentryDataList = [
@@ -35,6 +36,10 @@ export const CarpentryGalleryImages = [
   {
     title: "carpentry-5.jpg",
     image: Carpentry5Img
+  },
+  {
+    title: "carpentry-6.jpg",
+    image: Carpentry6Img
   }
 ];
 

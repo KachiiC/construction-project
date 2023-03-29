@@ -5,6 +5,25 @@ $grid-breakpoint: 700px;
 $smallest-breakpoint: 520px;
 $headline-border-offset: 0.5em;
 
+.about-text {
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+  h1 {
+    text-transform: uppercase;
+  }
+  p {
+    text-align: left;
+    word-spacing: 5px;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  @media screen and (max-width: 640px) {
+    width: 80%;
+  }
+}
+
 .about-banner {
   img {
     width: 100%;

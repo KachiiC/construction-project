@@ -123,6 +123,17 @@
       }
     }
   }
+
+  .footer-address {
+    margin-top: 50px;
+    h3 {
+      margin: 20px auto 0px;
+    }
+
+    p {
+      margin: 0px auto;
+    }
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -142,6 +153,10 @@
 
   .footer-contact-container {
     grid-column: span 12;
+  }
+
+  .footer-address {
+    margin-top: 0px !important;
   }
 }
 

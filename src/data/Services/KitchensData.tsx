@@ -1,6 +1,11 @@
 import Kitchen1Img from "assets/images/service_images/kitchen/kitchen-1.jpg";
 import Kitchen2Img from "assets/images/service_images/kitchen/kitchen-2.jpg";
 import Kitchen3Img from "assets/images/service_images/kitchen/kitchen-3.jpg";
+import Kitchen4Img from "assets/images/service_images/kitchen/kitchen-4.jpg";
+import Kitchen5Img from "assets/images/service_images/kitchen/kitchen-5.jpg";
+import Kitchen6Img from "assets/images/service_images/kitchen/kitchen-6.jpg";
+import Kitchen7Img from "assets/images/service_images/kitchen/kitchen-7.jpg";
+import Kitchen8Img from "assets/images/service_images/kitchen/kitchen-8.jpg";
 import KitchenImg from "assets/images/service_images/kitchen.jpg";
 
 export const KitchensDataList = [
@@ -22,7 +27,27 @@ export const KitchenGalleryImages = [
   {
     title: "kitchen-3",
     image: Kitchen3Img
-  }
+  },
+  {
+    title: "kitchen-4",
+    image: Kitchen4Img
+  },
+  {
+    title: "kitchen-5",
+    image: Kitchen5Img
+  },
+  {
+    title: "kitchen-6",
+    image: Kitchen6Img
+  },
+  {
+    title: "kitchen-7",
+    image: Kitchen7Img
+  },
+  {
+    title: "kitchen-8",
+    image: Kitchen8Img
+  },
 ]
 
 export const KitchensData = {
