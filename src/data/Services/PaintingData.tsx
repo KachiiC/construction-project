@@ -3,6 +3,8 @@ import Painting2Img from "assets/images/service_images/painting/painting-2.jpg";
 import Painting3Img from "assets/images/service_images/painting/painting-3.jpg";
 import Painting4Img from "assets/images/service_images/painting/painting-4.jpg";
 import Painting5Img from "assets/images/service_images/painting/painting-5.jpg";
+import Painting6Img from "assets/images/service_images/painting/painting-6.jpg";
+import Painting7Img from "assets/images/service_images/painting/painting-7.jpg";
 import PaintingImg from "assets/images/service_images/painting.jpg";
 
 export const PaintingDataList = [
@@ -31,7 +33,15 @@ export const PaintingGalleryImages = [
   {
     title: "painting-5",
     image: Painting5Img
-  }
+  },
+  {
+    title: "painting-6",
+    image: Painting6Img
+  },
+  {
+    title: "painting-7",
+    image: Painting7Img
+  },
 ];
 
 export const PaintingData = {
