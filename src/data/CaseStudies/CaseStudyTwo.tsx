@@ -8,20 +8,20 @@ const caseStudyTwoImages = [ImgOne, ImgTwo, ImgThree];
 const caseStudyTwoBody = (
   <div>
     <p>
-      Our client wanted to update a run down domestic building ready to put on
+      Our client wanted to update a domestic building ready to put on
       the market. The brief was to update and refresh the space while making it
-      more practical, creating a home for the rental market
+      more practical, creating a home for the rental market.
     </p>
     <h4>Solution</h4>
     <p>
-      The spaces were completely stripped back to the shell and an all walls
+      The spaces were completely stripped back to the shell and all walls
       re-plastered. Both bathrooms and kitchen were refurbished including the
-      outside area being made maintenance free with a astroturf finnish
+      outside area being made maintenance free with an astroturf.
     </p>
     <h4>Results</h4>
     <p>
       The property was snapped up within weeks of being on the market and the
-      client had income immediately on their investment
+      client had income immediately on their investment.
     </p>
   </div>
 );

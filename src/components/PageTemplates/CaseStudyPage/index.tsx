@@ -1,5 +1,4 @@
 import "./CaseStudyPage.scss";
-
 import { CaseStudy } from "./partials/CaseStudy";
 import { ICaseStudyPage } from "./CaseStudyPage.types";
 

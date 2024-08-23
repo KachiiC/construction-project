@@ -8,7 +8,7 @@ const caseStudyOneImages = [ImgOne, ImgTwo, ImgThree];
 const caseStudyOneBody = (
   <div>
     <p>
-      Our client, wanted to create new unisex cubicles for both showers and
+      Our client wanted to create new unisex cubicles for both showers and
       toilets within an office block in Brighton. The existing was very dated
       and required major works to completely change the layout and create new
       versatile spaces.
@@ -23,14 +23,14 @@ const caseStudyOneBody = (
     </p>
     <h4>Results</h4>
     <p>
-      Happy clients, with their new unisex versatile toilet and wash spaces.
+      Happy clients with their new unisex versatile toilet and wash spaces.
       encompassing new wiring, plumbing and ventilation system throughout.
     </p>
   </div>
 );
 
 export const caseStudyOne = {
-  title: " Brighton Superloo Refurbishment",
+  title: "Brighton Superloo Refurbishment",
   images: caseStudyOneImages,
   featured: FeaturedImg,
   body: caseStudyOneBody

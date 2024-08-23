@@ -16,8 +16,8 @@ const About: FC = () => (
         <p>
           VVS Property Group Ltd directors have over 10 years within the
           industry. Working for private, commercial clients and local
-          authorities, delivering anything from large and small refurbishment to
-          small repairs and maintenance.
+          authorities, delivering anything from large and small refurbishments
+          to small repairs and maintenance.
         </p>
         <p>
           Customer service has always been at the forefront of our business

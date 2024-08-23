@@ -35,7 +35,7 @@ export const RoofingGalleryImages = [
 export const RoofingData = {
   title: "Roofing",
   description:
-    "VVS Property Group can help with All aspects of traditional and modern roofing including new installation and maintenance of both domestic and commercial roofs. Different types of roofing include; traditional pitched clay and slate, traditional felt flat roofing, liquid systems, lead work, gutters and downpipes and all roofing repairs.",
+    "VVS Property Group can help with all aspects of traditional and modern roofing including new installation and maintenance of both domestic and commercial roofs. Different types of roofing include; traditional pitched clay and slate, traditional felt flat roofing, liquid systems, lead work, gutters and downpipes and all roofing repairs.",
   image: RoofingImg,
   list: RoofingDataList,
   related: ["Building", "Carpentry", "Mechanical"],

@@ -47,7 +47,7 @@ export const PaintingGalleryImages = [
 export const PaintingData = {
   title: "Painting and Decorating",
   description:
-    "VVS Property Group pride themselves as one of London and south east top painting and decorating companies. Having carried out various projects both domestic and commercial we can cater for all of your needs.",
+    "VVS Property Group pride themselves as one of London and the South East's top painting and decorating companies. Having carried out various projects both domestic and commercial we can cater for all of your needs.",
   image: PaintingImg,
   list: PaintingDataList,
   related: ["Carpentry", "Roofing", "Building"],
