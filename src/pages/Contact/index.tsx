@@ -15,7 +15,7 @@ const Contact = () => {
           </a>
           <a href="mailto: jtran@vvsproperty.co.uk">
             <p>
-              <span>Enquiry:</span> info@vvsproperty.co.uk
+              <span>Enquiries:</span> info@vvsproperty.co.uk
             </p>
           </a>
         </div>
